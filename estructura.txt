@@ -1,0 +1,35 @@
+empresa_gestion/
+├── admin/
+│   └── index.php
+├── assets/
+│   ├── css/
+│   │   ├── color_theme.css
+│   │   ├── skin_color.css
+│   │   ├── style.css
+│   │   ├── main.csss
+│   │   └── vendors_css.css
+│   ├── js/
+│   │   ├── pages/
+│   │   │    ├── chat-popup.js
+│   │   │    └── dashboard.js
+│   │   ├── login.js
+│   │   ├── template.js
+│   │   └── vendors.min.js
+│   ├── vendor_components/
+│   │   ├── apexcharts-bundle/
+│   │   │    └── dist/
+│   │   │    │   └── apexcharts.js
+│   │   └── bootstrap/
+│   │   │    └── dist/
+│   │   │    │   └── css/
+│   │   │    │   │   └── bootstrap.css
+│   └── icons/
+│   │   ├── feather-icons/
+│   │   ├── icomoon/
+│   │   └── Ionicons/
+├── images/
+├── includes/
+│   ├── auth.php
+│   └── conexion.php
+├── index.php
+└── estructura.txt
