@@ -1,0 +1,78 @@
+   178.4ms (setup:1108): 2025-12-26 01:32:18
+   178.5ms (setup:1109): /usr/bin/pipx install open-interpreter
+   178.6ms (setup:1110): pipx version is 1.7.1
+   178.6ms (setup:1111): Default python interpreter is '/usr/bin/python3.13'
+   178.8ms (mkdir:76): creating directory /root/.local/share/pipx/venvs
+   179.3ms (mkdir:76): creating directory /root/.local/bin
+   179.6ms (mkdir:76): creating directory /root/.local/share/man
+   179.9ms (mkdir:76): creating directory /root/.cache/pipx
+   180.3ms (mkdir:76): creating directory /root/.local/share/pipx/py
+   180.6ms (setup:1125): Adding CACHEDIR.TAG to cache directory
+   181.0ms (setup:1125): Adding CACHEDIR.TAG to cache directory
+   183.5ms (package_name_from_spec:378): Determined package name: open-interpreter
+   183.7ms (package_name_from_spec:379): Package name determined in 0.0s
+   184.1ms (create_venv:164): Creating virtual environment
+   185.3ms (run_subprocess:175): running /usr/bin/python3.13 -m venv --without-pip /root/.local/share/pipx/venvs/open-interpreter
+   308.5ms (run_subprocess:195): stdout:
+   308.7ms (run_subprocess:197): stderr:
+   308.8ms (run_subprocess:198): returncode: 0
+   310.8ms (run_subprocess:175): running /usr/bin/python3.13 -m venv --clear /root/.local/share/pipx/shared
+  3806.8ms (run_subprocess:195): stdout:
+  3807.0ms (run_subprocess:197): stderr:
+  3807.0ms (run_subprocess:198): returncode: 0
+  3807.7ms (run_subprocess:175): running <checking pip's availability>
+  3841.5ms (run_subprocess:195): stdout: ModuleSpec(name='pip', loader=<_frozen_importlib_external.SourceFileLoader object at 0x7fba562db250>, origin='/root/.local/share/pipx/shared/lib/python3.13/site-packages/pip/__init__.py', submodule_search_locations=['/root/.local/share/pipx/shared/lib/python3.13/site-packages/pip'])
+  3841.8ms (run_subprocess:198): returncode: 0
+  3842.9ms (upgrade:119): Upgrading shared libraries in /root/.local/share/pipx/shared
+  3844.5ms (run_subprocess:175): running /root/.local/share/pipx/shared/bin/python -m pip --no-input --disable-pip-version-check install --force-reinstall -q --upgrade pip >= 23.1
+  6041.6ms (run_subprocess:195): stdout:
+  6041.7ms (run_subprocess:197): stderr:
+  6041.8ms (run_subprocess:198): returncode: 0
+  6042.3ms (run_subprocess:175): running /root/.local/share/pipx/venvs/open-interpreter/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+  6089.7ms (run_subprocess:195): stdout: /root/.local/share/pipx/venvs/open-interpreter/lib/python3.13/site-packages
+  6089.9ms (run_subprocess:198): returncode: 0
+  6091.3ms (run_subprocess:175): running /root/.local/share/pipx/shared/bin/python -c import sysconfig; print(sysconfig.get_path('purelib'))
+  6140.4ms (run_subprocess:195): stdout: /root/.local/share/pipx/shared/lib/python3.13/site-packages
+  6140.5ms (run_subprocess:198): returncode: 0
+  6141.4ms (run_subprocess:175): running /root/.local/share/pipx/venvs/open-interpreter/bin/python --version
+  6144.2ms (run_subprocess:195): stdout: Python 3.13.5
+  6144.3ms (run_subprocess:197): stderr:
+  6144.3ms (run_subprocess:198): returncode: 0
+  6144.9ms (_parsed_package_to_package_or_url:139): cleaned package spec: open-interpreter
+  6145.0ms (install_package:247): Installing open-interpreter
+  6145.7ms (run_subprocess:175): running /root/.local/share/pipx/venvs/open-interpreter/bin/python -m pip --no-input install open-interpreter
+ 53892.7ms (run_subprocess:198): returncode: 1
+ 53892.9ms (subprocess_post_check_handle_pip_error:332): '/root/.local/share/pipx/venvs/open-interpreter/bin/python -m pip --no-input install open-interpreter' failed
+ 53893.7ms (subprocess_post_check_handle_pip_error:347): Fatal error from pip prevented installation. Full pip output in file:
+    /root/.local/state/pipx/log/cmd_2025-12-26_01.32.18_pip_errors.log
+ 53896.5ms (analyze_pip_output:303): pip failed to build package:
+    tiktoken
+ 53896.7ms (rmdir:56): removing directory /root/.local/share/pipx/venvs/open-interpreter
+ 53897.6ms (cli:1179): PipxError: Error installing open-interpreter.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/pipx/main.py", line 1176, in cli
+    return run_pipx_command(parsed_pipx_args, subparsers)
+  File "/usr/lib/python3/dist-packages/pipx/main.py", line 282, in run_pipx_command
+    return commands.install(
+           ~~~~~~~~~~~~~~~~^
+        None,
+        ^^^^^
+    ...<13 lines>...
+        python_flag_passed=python_flag_passed,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/lib/python3/dist-packages/pipx/commands/install.py", line 99, in install
+    venv.install_package(
+    ~~~~~~~~~~~~~~~~~~~~^
+        package_name=package_name,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        suffix=suffix,
+        ^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/lib/python3/dist-packages/pipx/venv.py", line 265, in install_package
+    raise PipxError(f"Error installing {full_package_description(package_name, package_or_url)}.")
+pipx.util.PipxError: Error installing open-interpreter.
+ 53899.4ms (cli:1187): pipx finished.

@@ -1,0 +1,668 @@
+PIP STDOUT
+----------
+Collecting open-interpreter
+  Using cached open_interpreter-0.4.3-py3-none-any.whl.metadata (17 kB)
+Collecting anthropic<0.38.0,>=0.37.1 (from open-interpreter)
+  Using cached anthropic-0.37.1-py3-none-any.whl.metadata (21 kB)
+Collecting astor<0.9.0,>=0.8.1 (from open-interpreter)
+  Using cached astor-0.8.1-py2.py3-none-any.whl.metadata (4.2 kB)
+Collecting git-python<2.0.0,>=1.0.3 (from open-interpreter)
+  Using cached git_python-1.0.3-py2.py3-none-any.whl.metadata (331 bytes)
+Collecting google-generativeai<0.8.0,>=0.7.1 (from open-interpreter)
+  Using cached google_generativeai-0.7.2-py3-none-any.whl.metadata (4.0 kB)
+Collecting html2image<3.0.0.0,>=2.0.4.3 (from open-interpreter)
+  Using cached html2image-2.0.7-py3-none-any.whl.metadata (20 kB)
+Collecting html2text<2025.0.0,>=2024.2.26 (from open-interpreter)
+  Using cached html2text-2024.2.26-py3-none-any.whl
+Collecting inquirer<4.0.0,>=3.1.3 (from open-interpreter)
+  Using cached inquirer-3.4.1-py3-none-any.whl.metadata (6.8 kB)
+Collecting ipykernel<7.0.0,>=6.26.0 (from open-interpreter)
+  Using cached ipykernel-6.31.0-py3-none-any.whl.metadata (4.5 kB)
+Collecting jupyter-client<9.0.0,>=8.6.0 (from open-interpreter)
+  Using cached jupyter_client-8.7.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting litellm<2.0.0,>=1.41.26 (from open-interpreter)
+  Using cached litellm-1.80.11-py3-none-any.whl.metadata (29 kB)
+Collecting matplotlib<4.0.0,>=3.8.2 (from open-interpreter)
+  Using cached matplotlib-3.10.8-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (52 kB)
+Collecting nltk<4.0.0,>=3.8.1 (from open-interpreter)
+  Using cached nltk-3.9.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting platformdirs<5.0.0,>=4.2.0 (from open-interpreter)
+  Using cached platformdirs-4.5.1-py3-none-any.whl.metadata (12 kB)
+Collecting psutil<6.0.0,>=5.9.6 (from open-interpreter)
+  Using cached psutil-5.9.8-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (21 kB)
+Collecting pydantic<3.0.0,>=2.6.4 (from open-interpreter)
+  Using cached pydantic-2.12.5-py3-none-any.whl.metadata (90 kB)
+Collecting pyperclip<2.0.0,>=1.9.0 (from open-interpreter)
+  Using cached pyperclip-1.11.0-py3-none-any.whl.metadata (2.4 kB)
+Collecting pyyaml<7.0.0,>=6.0.1 (from open-interpreter)
+  Using cached pyyaml-6.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting rich<14.0.0,>=13.4.2 (from open-interpreter)
+  Using cached rich-13.9.4-py3-none-any.whl.metadata (18 kB)
+Collecting selenium<5.0.0,>=4.24.0 (from open-interpreter)
+  Using cached selenium-4.39.0-py3-none-any.whl.metadata (7.5 kB)
+Collecting send2trash<2.0.0,>=1.8.2 (from open-interpreter)
+  Using cached Send2Trash-1.8.3-py3-none-any.whl.metadata (4.0 kB)
+Collecting setuptools (from open-interpreter)
+  Using cached setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting shortuuid<2.0.0,>=1.0.13 (from open-interpreter)
+  Using cached shortuuid-1.0.13-py3-none-any.whl.metadata (5.8 kB)
+Collecting six<2.0.0,>=1.16.0 (from open-interpreter)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting starlette<0.38.0,>=0.37.2 (from open-interpreter)
+  Using cached starlette-0.37.2-py3-none-any.whl.metadata (5.9 kB)
+Collecting tiktoken<0.8.0,>=0.7.0 (from open-interpreter)
+  Using cached tiktoken-0.7.0.tar.gz (33 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting tokentrim<0.2.0,>=0.1.13 (from open-interpreter)
+  Using cached tokentrim-0.1.13-py3-none-any.whl.metadata (2.9 kB)
+Collecting toml<0.11.0,>=0.10.2 (from open-interpreter)
+  Using cached toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+Collecting typer<0.13.0,>=0.12.5 (from open-interpreter)
+  Using cached typer-0.12.5-py3-none-any.whl.metadata (15 kB)
+Collecting webdriver-manager<5.0.0,>=4.0.2 (from open-interpreter)
+  Using cached webdriver_manager-4.0.2-py2.py3-none-any.whl.metadata (12 kB)
+Collecting wget<4.0,>=3.2 (from open-interpreter)
+  Using cached wget-3.2-py3-none-any.whl
+Collecting yaspin<4.0.0,>=3.0.2 (from open-interpreter)
+  Using cached yaspin-3.4.0-py3-none-any.whl.metadata (15 kB)
+Collecting anyio<5,>=3.5.0 (from anthropic<0.38.0,>=0.37.1->open-interpreter)
+  Using cached anyio-4.12.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting distro<2,>=1.7.0 (from anthropic<0.38.0,>=0.37.1->open-interpreter)
+  Using cached distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+Collecting httpx<1,>=0.23.0 (from anthropic<0.38.0,>=0.37.1->open-interpreter)
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting jiter<1,>=0.4.0 (from anthropic<0.38.0,>=0.37.1->open-interpreter)
+  Using cached jiter-0.12.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.2 kB)
+Collecting sniffio (from anthropic<0.38.0,>=0.37.1->open-interpreter)
+  Using cached sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting tokenizers>=0.13.0 (from anthropic<0.38.0,>=0.37.1->open-interpreter)
+  Using cached tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+Collecting typing-extensions<5,>=4.7 (from anthropic<0.38.0,>=0.37.1->open-interpreter)
+  Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting idna>=2.8 (from anyio<5,>=3.5.0->anthropic<0.38.0,>=0.37.1->open-interpreter)
+  Using cached idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+Collecting gitpython (from git-python<2.0.0,>=1.0.3->open-interpreter)
+  Using cached gitpython-3.1.45-py3-none-any.whl.metadata (13 kB)
+Collecting google-ai-generativelanguage==0.6.6 (from google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached google_ai_generativelanguage-0.6.6-py3-none-any.whl.metadata (5.6 kB)
+Collecting google-api-core (from google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached google_api_core-2.28.1-py3-none-any.whl.metadata (3.3 kB)
+Collecting google-api-python-client (from google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached google_api_python_client-2.187.0-py3-none-any.whl.metadata (7.0 kB)
+Collecting google-auth>=2.15.0 (from google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached google_auth-2.45.0-py2.py3-none-any.whl.metadata (6.8 kB)
+Collecting protobuf (from google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached protobuf-6.33.2-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+Collecting tqdm (from google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+Collecting proto-plus<2.0.0dev,>=1.22.3 (from google-ai-generativelanguage==0.6.6->google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached proto_plus-1.27.0-py3-none-any.whl.metadata (2.2 kB)
+Collecting protobuf (from google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached protobuf-4.25.8-cp37-abi3-manylinux2014_x86_64.whl.metadata (541 bytes)
+Collecting googleapis-common-protos<2.0.0,>=1.56.2 (from google-api-core->google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached googleapis_common_protos-1.72.0-py3-none-any.whl.metadata (9.4 kB)
+Collecting requests<3.0.0,>=2.18.0 (from google-api-core->google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+Collecting grpcio<2.0.0,>=1.33.2 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1->google-ai-generativelanguage==0.6.6->google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached grpcio-1.76.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.7 kB)
+Collecting grpcio-status<2.0.0,>=1.33.2 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1->google-ai-generativelanguage==0.6.6->google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached grpcio_status-1.76.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting cachetools<7.0,>=2.0.0 (from google-auth>=2.15.0->google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached cachetools-6.2.4-py3-none-any.whl.metadata (5.6 kB)
+Collecting pyasn1-modules>=0.2.1 (from google-auth>=2.15.0->google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached pyasn1_modules-0.4.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting rsa<5,>=3.1.4 (from google-auth>=2.15.0->google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached rsa-4.9.1-py3-none-any.whl.metadata (5.6 kB)
+INFO: pip is looking at multiple versions of grpcio-status to determine which version is compatible with other requirements. This could take a while.
+Collecting grpcio-status<2.0.0,>=1.33.2 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1->google-ai-generativelanguage==0.6.6->google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached grpcio_status-1.75.1-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.75.0-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.74.0-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.73.1-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.73.0-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.72.2-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.72.1-py3-none-any.whl.metadata (1.1 kB)
+INFO: pip is still looking at multiple versions of grpcio-status to determine which version is compatible with other requirements. This could take a while.
+  Using cached grpcio_status-1.71.2-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.71.0-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.70.0-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.69.0-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.68.1-py3-none-any.whl.metadata (1.1 kB)
+INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+  Using cached grpcio_status-1.68.0-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.67.1-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.67.0-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.66.2-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.66.1-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.66.0-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.65.5-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.65.4-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.65.2-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.65.1-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.64.3-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.64.1-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.64.0-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.63.2-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.63.0-py3-none-any.whl.metadata (1.1 kB)
+  Using cached grpcio_status-1.62.3-py3-none-any.whl.metadata (1.3 kB)
+Collecting websocket-client~=1.0 (from html2image<3.0.0.0,>=2.0.4.3->open-interpreter)
+  Using cached websocket_client-1.9.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting certifi (from httpx<1,>=0.23.0->anthropic<0.38.0,>=0.37.1->open-interpreter)
+  Using cached certifi-2025.11.12-py3-none-any.whl.metadata (2.5 kB)
+Collecting httpcore==1.* (from httpx<1,>=0.23.0->anthropic<0.38.0,>=0.37.1->open-interpreter)
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting h11>=0.16 (from httpcore==1.*->httpx<1,>=0.23.0->anthropic<0.38.0,>=0.37.1->open-interpreter)
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting blessed>=1.19.0 (from inquirer<4.0.0,>=3.1.3->open-interpreter)
+  Using cached blessed-1.25.0-py3-none-any.whl.metadata (13 kB)
+Collecting editor>=1.6.0 (from inquirer<4.0.0,>=3.1.3->open-interpreter)
+  Using cached editor-1.6.6-py3-none-any.whl.metadata (2.3 kB)
+Collecting readchar>=4.2.0 (from inquirer<4.0.0,>=3.1.3->open-interpreter)
+  Using cached readchar-4.2.1-py3-none-any.whl.metadata (7.5 kB)
+Collecting comm>=0.1.1 (from ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached comm-0.2.3-py3-none-any.whl.metadata (3.7 kB)
+Collecting debugpy>=1.6.5 (from ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached debugpy-1.8.19-cp313-cp313-manylinux_2_34_x86_64.whl.metadata (1.4 kB)
+Collecting ipython>=7.23.1 (from ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached ipython-9.8.0-py3-none-any.whl.metadata (4.5 kB)
+Collecting jupyter-core!=5.0.*,>=4.12 (from ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached jupyter_core-5.9.1-py3-none-any.whl.metadata (1.5 kB)
+Collecting matplotlib-inline>=0.1 (from ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached matplotlib_inline-0.2.1-py3-none-any.whl.metadata (2.3 kB)
+Collecting nest-asyncio>=1.4 (from ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached nest_asyncio-1.6.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting packaging>=22 (from ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pyzmq>=25 (from ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached pyzmq-27.1.0-cp312-abi3-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl.metadata (6.0 kB)
+Collecting tornado>=6.2 (from ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached tornado-6.5.4-cp39-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.8 kB)
+Collecting traitlets>=5.4.0 (from ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached traitlets-5.14.3-py3-none-any.whl.metadata (10 kB)
+Collecting python-dateutil>=2.8.2 (from jupyter-client<9.0.0,>=8.6.0->open-interpreter)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting aiohttp>=3.10 (from litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached aiohttp-3.13.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.1 kB)
+Collecting click (from litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached click-8.3.1-py3-none-any.whl.metadata (2.6 kB)
+Collecting fastuuid>=0.13.0 (from litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached fastuuid-0.14.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (1.1 kB)
+Collecting grpcio<2.0.0,>=1.33.2 (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1->google-ai-generativelanguage==0.6.6->google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached grpcio-1.67.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.9 kB)
+Collecting importlib-metadata>=6.8.0 (from litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached importlib_metadata-8.7.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting jinja2<4.0.0,>=3.1.2 (from litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting jsonschema<5.0.0,>=4.23.0 (from litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached jsonschema-4.25.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting openai>=2.8.0 (from litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached openai-2.14.0-py3-none-any.whl.metadata (29 kB)
+Collecting python-dotenv>=0.2.0 (from litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+Collecting MarkupSafe>=2.0 (from jinja2<4.0.0,>=3.1.2->litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached markupsafe-3.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Collecting attrs>=22.2.0 (from jsonschema<5.0.0,>=4.23.0->litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached attrs-25.4.0-py3-none-any.whl.metadata (10 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema<5.0.0,>=4.23.0->litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Collecting referencing>=0.28.4 (from jsonschema<5.0.0,>=4.23.0->litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.7.1 (from jsonschema<5.0.0,>=4.23.0->litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached rpds_py-0.30.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+Collecting contourpy>=1.0.1 (from matplotlib<4.0.0,>=3.8.2->open-interpreter)
+  Using cached contourpy-1.3.3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib<4.0.0,>=3.8.2->open-interpreter)
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib<4.0.0,>=3.8.2->open-interpreter)
+  Using cached fonttools-4.61.1-cp313-cp313-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl.metadata (114 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib<4.0.0,>=3.8.2->open-interpreter)
+  Using cached kiwisolver-1.4.9-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.3 kB)
+Collecting numpy>=1.23 (from matplotlib<4.0.0,>=3.8.2->open-interpreter)
+  Using cached numpy-2.4.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting pillow>=8 (from matplotlib<4.0.0,>=3.8.2->open-interpreter)
+  Using cached pillow-12.0.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
+Collecting pyparsing>=3 (from matplotlib<4.0.0,>=3.8.2->open-interpreter)
+  Using cached pyparsing-3.3.1-py3-none-any.whl.metadata (5.6 kB)
+Collecting joblib (from nltk<4.0.0,>=3.8.1->open-interpreter)
+  Using cached joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting regex>=2021.8.3 (from nltk<4.0.0,>=3.8.1->open-interpreter)
+  Using cached regex-2025.11.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+Collecting annotated-types>=0.6.0 (from pydantic<3.0.0,>=2.6.4->open-interpreter)
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.41.5 (from pydantic<3.0.0,>=2.6.4->open-interpreter)
+  Using cached pydantic_core-2.41.5-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.3 kB)
+Collecting typing-inspection>=0.4.2 (from pydantic<3.0.0,>=2.6.4->open-interpreter)
+  Using cached typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting charset_normalizer<4,>=2 (from requests<3.0.0,>=2.18.0->google-api-core->google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached charset_normalizer-3.4.4-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (37 kB)
+Collecting urllib3<3,>=1.21.1 (from requests<3.0.0,>=2.18.0->google-api-core->google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached urllib3-2.6.2-py3-none-any.whl.metadata (6.6 kB)
+Collecting markdown-it-py>=2.2.0 (from rich<14.0.0,>=13.4.2->open-interpreter)
+  Using cached markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich<14.0.0,>=13.4.2->open-interpreter)
+  Using cached pygments-2.19.2-py3-none-any.whl.metadata (2.5 kB)
+Collecting pyasn1>=0.1.3 (from rsa<5,>=3.1.4->google-auth>=2.15.0->google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached pyasn1-0.6.1-py3-none-any.whl.metadata (8.4 kB)
+Collecting trio<1.0,>=0.31.0 (from selenium<5.0.0,>=4.24.0->open-interpreter)
+  Using cached trio-0.32.0-py3-none-any.whl.metadata (8.5 kB)
+Collecting trio-websocket<1.0,>=0.12.2 (from selenium<5.0.0,>=4.24.0->open-interpreter)
+  Using cached trio_websocket-0.12.2-py3-none-any.whl.metadata (5.1 kB)
+Collecting sortedcontainers (from trio<1.0,>=0.31.0->selenium<5.0.0,>=4.24.0->open-interpreter)
+  Using cached sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+Collecting outcome (from trio<1.0,>=0.31.0->selenium<5.0.0,>=4.24.0->open-interpreter)
+  Using cached outcome-1.3.0.post0-py2.py3-none-any.whl.metadata (2.6 kB)
+Collecting wsproto>=0.14 (from trio-websocket<1.0,>=0.12.2->selenium<5.0.0,>=4.24.0->open-interpreter)
+  Using cached wsproto-1.3.2-py3-none-any.whl.metadata (5.2 kB)
+Collecting shellingham>=1.3.0 (from typer<0.13.0,>=0.12.5->open-interpreter)
+  Using cached shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting pysocks!=1.5.7,<2.0,>=1.5.6 (from urllib3[socks]<3.0,>=2.5.0->selenium<5.0.0,>=4.24.0->open-interpreter)
+  Using cached PySocks-1.7.1-py3-none-any.whl.metadata (13 kB)
+Collecting termcolor<4.0,>=3.2 (from yaspin<4.0.0,>=3.0.2->open-interpreter)
+  Using cached termcolor-3.2.0-py3-none-any.whl.metadata (6.4 kB)
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp>=3.10->litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.4.0 (from aiohttp>=3.10->litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp>=3.10->litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached frozenlist-1.8.0-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (20 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp>=3.10->litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached multidict-6.7.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.3 kB)
+Collecting propcache>=0.2.0 (from aiohttp>=3.10->litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached propcache-0.4.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (13 kB)
+Collecting yarl<2.0,>=1.17.0 (from aiohttp>=3.10->litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached yarl-1.22.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (75 kB)
+Collecting wcwidth>=0.1.4 (from blessed>=1.19.0->inquirer<4.0.0,>=3.1.3->open-interpreter)
+  Using cached wcwidth-0.2.14-py2.py3-none-any.whl.metadata (15 kB)
+Collecting runs (from editor>=1.6.0->inquirer<4.0.0,>=3.1.3->open-interpreter)
+  Using cached runs-1.2.2-py3-none-any.whl.metadata (10 kB)
+Collecting xmod (from editor>=1.6.0->inquirer<4.0.0,>=3.1.3->open-interpreter)
+  Using cached xmod-1.8.1-py3-none-any.whl.metadata (1.8 kB)
+Collecting zipp>=3.20 (from importlib-metadata>=6.8.0->litellm<2.0.0,>=1.41.26->open-interpreter)
+  Using cached zipp-3.23.0-py3-none-any.whl.metadata (3.6 kB)
+Collecting decorator>=4.3.2 (from ipython>=7.23.1->ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached decorator-5.2.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting ipython-pygments-lexers>=1.0.0 (from ipython>=7.23.1->ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached ipython_pygments_lexers-1.1.1-py3-none-any.whl.metadata (1.1 kB)
+Collecting jedi>=0.18.1 (from ipython>=7.23.1->ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached jedi-0.19.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting pexpect>4.3 (from ipython>=7.23.1->ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached pexpect-4.9.0-py2.py3-none-any.whl.metadata (2.5 kB)
+Collecting prompt_toolkit<3.1.0,>=3.0.41 (from ipython>=7.23.1->ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached prompt_toolkit-3.0.52-py3-none-any.whl.metadata (6.4 kB)
+Collecting stack_data>=0.6.0 (from ipython>=7.23.1->ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached stack_data-0.6.3-py3-none-any.whl.metadata (18 kB)
+Collecting parso<0.9.0,>=0.8.4 (from jedi>=0.18.1->ipython>=7.23.1->ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached parso-0.8.5-py2.py3-none-any.whl.metadata (8.3 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich<14.0.0,>=13.4.2->open-interpreter)
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting ptyprocess>=0.5 (from pexpect>4.3->ipython>=7.23.1->ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached ptyprocess-0.7.0-py2.py3-none-any.whl.metadata (1.3 kB)
+Collecting executing>=1.2.0 (from stack_data>=0.6.0->ipython>=7.23.1->ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached executing-2.2.1-py2.py3-none-any.whl.metadata (8.9 kB)
+Collecting asttokens>=2.1.0 (from stack_data>=0.6.0->ipython>=7.23.1->ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached asttokens-3.0.1-py3-none-any.whl.metadata (4.9 kB)
+Collecting pure-eval (from stack_data>=0.6.0->ipython>=7.23.1->ipykernel<7.0.0,>=6.26.0->open-interpreter)
+  Using cached pure_eval-0.2.3-py3-none-any.whl.metadata (6.3 kB)
+Collecting huggingface-hub<2.0,>=0.16.4 (from tokenizers>=0.13.0->anthropic<0.38.0,>=0.37.1->open-interpreter)
+  Using cached huggingface_hub-1.2.3-py3-none-any.whl.metadata (13 kB)
+Collecting filelock (from huggingface-hub<2.0,>=0.16.4->tokenizers>=0.13.0->anthropic<0.38.0,>=0.37.1->open-interpreter)
+  Using cached filelock-3.20.1-py3-none-any.whl.metadata (2.1 kB)
+Collecting fsspec>=2023.5.0 (from huggingface-hub<2.0,>=0.16.4->tokenizers>=0.13.0->anthropic<0.38.0,>=0.37.1->open-interpreter)
+  Using cached fsspec-2025.12.0-py3-none-any.whl.metadata (10 kB)
+Collecting hf-xet<2.0.0,>=1.2.0 (from huggingface-hub<2.0,>=0.16.4->tokenizers>=0.13.0->anthropic<0.38.0,>=0.37.1->open-interpreter)
+  Using cached hf_xet-1.2.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Collecting typer-slim (from huggingface-hub<2.0,>=0.16.4->tokenizers>=0.13.0->anthropic<0.38.0,>=0.37.1->open-interpreter)
+  Using cached typer_slim-0.21.0-py3-none-any.whl.metadata (16 kB)
+Collecting gitdb<5,>=4.0.1 (from gitpython->git-python<2.0.0,>=1.0.3->open-interpreter)
+  Using cached gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->gitpython->git-python<2.0.0,>=1.0.3->open-interpreter)
+  Using cached smmap-5.0.2-py3-none-any.whl.metadata (4.3 kB)
+Collecting httplib2<1.0.0,>=0.19.0 (from google-api-python-client->google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached httplib2-0.31.0-py3-none-any.whl.metadata (2.2 kB)
+Collecting google-auth-httplib2<1.0.0,>=0.2.0 (from google-api-python-client->google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached google_auth_httplib2-0.3.0-py3-none-any.whl.metadata (3.1 kB)
+Collecting uritemplate<5,>=3.0.1 (from google-api-python-client->google-generativeai<0.8.0,>=0.7.1->open-interpreter)
+  Using cached uritemplate-4.2.0-py3-none-any.whl.metadata (2.6 kB)
+Using cached open_interpreter-0.4.3-py3-none-any.whl (255 kB)
+Using cached anthropic-0.37.1-py3-none-any.whl (945 kB)
+Using cached anyio-4.12.0-py3-none-any.whl (113 kB)
+Using cached astor-0.8.1-py2.py3-none-any.whl (27 kB)
+Using cached distro-1.9.0-py3-none-any.whl (20 kB)
+Using cached git_python-1.0.3-py2.py3-none-any.whl (1.9 kB)
+Using cached google_generativeai-0.7.2-py3-none-any.whl (164 kB)
+Using cached google_ai_generativelanguage-0.6.6-py3-none-any.whl (718 kB)
+Using cached google_api_core-2.28.1-py3-none-any.whl (173 kB)
+Using cached google_auth-2.45.0-py2.py3-none-any.whl (233 kB)
+Using cached cachetools-6.2.4-py3-none-any.whl (11 kB)
+Using cached googleapis_common_protos-1.72.0-py3-none-any.whl (297 kB)
+Using cached grpcio_status-1.62.3-py3-none-any.whl (14 kB)
+Using cached html2image-2.0.7-py3-none-any.whl (31 kB)
+Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Using cached inquirer-3.4.1-py3-none-any.whl (18 kB)
+Using cached ipykernel-6.31.0-py3-none-any.whl (117 kB)
+Using cached jiter-0.12.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (361 kB)
+Using cached jupyter_client-8.7.0-py3-none-any.whl (106 kB)
+Using cached litellm-1.80.11-py3-none-any.whl (11.5 MB)
+Using cached grpcio-1.67.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (5.9 MB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached jsonschema-4.25.1-py3-none-any.whl (90 kB)
+Using cached matplotlib-3.10.8-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.7 MB)
+Using cached nltk-3.9.2-py3-none-any.whl (1.5 MB)
+Using cached platformdirs-4.5.1-py3-none-any.whl (18 kB)
+Using cached proto_plus-1.27.0-py3-none-any.whl (50 kB)
+Using cached protobuf-4.25.8-cp37-abi3-manylinux2014_x86_64.whl (294 kB)
+Using cached psutil-5.9.8-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (288 kB)
+Using cached pydantic-2.12.5-py3-none-any.whl (463 kB)
+Using cached pydantic_core-2.41.5-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+Using cached pyperclip-1.11.0-py3-none-any.whl (11 kB)
+Using cached pyyaml-6.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (801 kB)
+Using cached requests-2.32.5-py3-none-any.whl (64 kB)
+Using cached charset_normalizer-3.4.4-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (153 kB)
+Using cached idna-3.11-py3-none-any.whl (71 kB)
+Using cached rich-13.9.4-py3-none-any.whl (242 kB)
+Using cached pygments-2.19.2-py3-none-any.whl (1.2 MB)
+Using cached rsa-4.9.1-py3-none-any.whl (34 kB)
+Using cached selenium-4.39.0-py3-none-any.whl (9.7 MB)
+Using cached Send2Trash-1.8.3-py3-none-any.whl (18 kB)
+Using cached shortuuid-1.0.13-py3-none-any.whl (10 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached starlette-0.37.2-py3-none-any.whl (71 kB)
+Using cached tokentrim-0.1.13-py3-none-any.whl (7.8 kB)
+Using cached toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Using cached trio-0.32.0-py3-none-any.whl (512 kB)
+Using cached trio_websocket-0.12.2-py3-none-any.whl (21 kB)
+Using cached typer-0.12.5-py3-none-any.whl (47 kB)
+Using cached typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Using cached urllib3-2.6.2-py3-none-any.whl (131 kB)
+Using cached PySocks-1.7.1-py3-none-any.whl (16 kB)
+Using cached webdriver_manager-4.0.2-py2.py3-none-any.whl (27 kB)
+Using cached websocket_client-1.9.0-py3-none-any.whl (82 kB)
+Using cached yaspin-3.4.0-py3-none-any.whl (21 kB)
+Using cached termcolor-3.2.0-py3-none-any.whl (7.7 kB)
+Using cached aiohttp-3.13.2-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.7 MB)
+Using cached multidict-6.7.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (254 kB)
+Using cached yarl-1.22.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (377 kB)
+Using cached aiohappyeyeballs-2.6.1-py3-none-any.whl (15 kB)
+Using cached aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+Using cached annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Using cached attrs-25.4.0-py3-none-any.whl (67 kB)
+Using cached blessed-1.25.0-py3-none-any.whl (95 kB)
+Using cached certifi-2025.11.12-py3-none-any.whl (159 kB)
+Using cached click-8.3.1-py3-none-any.whl (108 kB)
+Using cached comm-0.2.3-py3-none-any.whl (7.3 kB)
+Using cached contourpy-1.3.3-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (362 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached debugpy-1.8.19-cp313-cp313-manylinux_2_34_x86_64.whl (4.3 MB)
+Using cached editor-1.6.6-py3-none-any.whl (4.0 kB)
+Using cached fastuuid-0.14.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (278 kB)
+Using cached fonttools-4.61.1-cp313-cp313-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl (4.9 MB)
+Using cached frozenlist-1.8.0-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (234 kB)
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Using cached importlib_metadata-8.7.1-py3-none-any.whl (27 kB)
+Using cached ipython-9.8.0-py3-none-any.whl (621 kB)
+Using cached prompt_toolkit-3.0.52-py3-none-any.whl (391 kB)
+Using cached decorator-5.2.1-py3-none-any.whl (9.2 kB)
+Using cached ipython_pygments_lexers-1.1.1-py3-none-any.whl (8.1 kB)
+Using cached jedi-0.19.2-py2.py3-none-any.whl (1.6 MB)
+Using cached parso-0.8.5-py2.py3-none-any.whl (106 kB)
+Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Using cached jupyter_core-5.9.1-py3-none-any.whl (29 kB)
+Using cached kiwisolver-1.4.9-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.5 MB)
+Using cached markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Using cached markupsafe-3.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Using cached matplotlib_inline-0.2.1-py3-none-any.whl (9.5 kB)
+Using cached nest_asyncio-1.6.0-py3-none-any.whl (5.2 kB)
+Using cached numpy-2.4.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.4 MB)
+Using cached openai-2.14.0-py3-none-any.whl (1.1 MB)
+Using cached outcome-1.3.0.post0-py2.py3-none-any.whl (10 kB)
+Using cached packaging-25.0-py3-none-any.whl (66 kB)
+Using cached pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+Using cached pillow-12.0.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.0 MB)
+Using cached propcache-0.4.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (204 kB)
+Using cached ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Using cached pyasn1-0.6.1-py3-none-any.whl (83 kB)
+Using cached pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+Using cached pyparsing-3.3.1-py3-none-any.whl (121 kB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached python_dotenv-1.2.1-py3-none-any.whl (21 kB)
+Using cached pyzmq-27.1.0-cp312-abi3-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (840 kB)
+Using cached readchar-4.2.1-py3-none-any.whl (9.3 kB)
+Using cached referencing-0.37.0-py3-none-any.whl (26 kB)
+Using cached regex-2025.11.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (803 kB)
+Using cached rpds_py-0.30.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (394 kB)
+Using cached shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Using cached sniffio-1.3.1-py3-none-any.whl (10 kB)
+Using cached stack_data-0.6.3-py3-none-any.whl (24 kB)
+Using cached asttokens-3.0.1-py3-none-any.whl (27 kB)
+Using cached executing-2.2.1-py2.py3-none-any.whl (28 kB)
+Using cached tokenizers-0.22.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+Using cached huggingface_hub-1.2.3-py3-none-any.whl (520 kB)
+Using cached hf_xet-1.2.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+Using cached fsspec-2025.12.0-py3-none-any.whl (201 kB)
+Using cached tornado-6.5.4-cp39-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (445 kB)
+Using cached tqdm-4.67.1-py3-none-any.whl (78 kB)
+Using cached traitlets-5.14.3-py3-none-any.whl (85 kB)
+Using cached typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+Using cached wcwidth-0.2.14-py2.py3-none-any.whl (37 kB)
+Using cached wsproto-1.3.2-py3-none-any.whl (24 kB)
+Using cached zipp-3.23.0-py3-none-any.whl (10 kB)
+Using cached filelock-3.20.1-py3-none-any.whl (16 kB)
+Using cached gitpython-3.1.45-py3-none-any.whl (208 kB)
+Using cached gitdb-4.0.12-py3-none-any.whl (62 kB)
+Using cached smmap-5.0.2-py3-none-any.whl (24 kB)
+Using cached google_api_python_client-2.187.0-py3-none-any.whl (14.6 MB)
+Using cached google_auth_httplib2-0.3.0-py3-none-any.whl (9.5 kB)
+Using cached httplib2-0.31.0-py3-none-any.whl (91 kB)
+Using cached uritemplate-4.2.0-py3-none-any.whl (11 kB)
+Using cached joblib-1.5.3-py3-none-any.whl (309 kB)
+Using cached pure_eval-0.2.3-py3-none-any.whl (11 kB)
+Using cached runs-1.2.2-py3-none-any.whl (7.0 kB)
+Using cached setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+Using cached sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+Using cached typer_slim-0.21.0-py3-none-any.whl (47 kB)
+Using cached xmod-1.8.1-py3-none-any.whl (4.6 kB)
+Building wheels for collected packages: tiktoken
+  Building wheel for tiktoken (pyproject.toml): started
+  Building wheel for tiktoken (pyproject.toml): finished with status 'error'
+Failed to build tiktoken
+
+PIP STDERR
+----------
+  error: subprocess-exited-with-error
+  
+  × Building wheel for tiktoken (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [178 lines of output]
+      /tmp/pip-build-env-t0b64k33/overlay/lib/python3.13/site-packages/setuptools/config/_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated
+      !!
+      
+              ********************************************************************************
+              Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+      
+              By 2026-Feb-18, you need to update your project and remove deprecated calls
+              or your builds will no longer be supported.
+      
+              See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+              ********************************************************************************
+      
+      !!
+        corresp(dist, value, root_dir)
+      running bdist_wheel
+      running build
+      running build_py
+      creating build/lib.linux-x86_64-cpython-313/tiktoken
+      copying tiktoken/registry.py -> build/lib.linux-x86_64-cpython-313/tiktoken
+      copying tiktoken/model.py -> build/lib.linux-x86_64-cpython-313/tiktoken
+      copying tiktoken/load.py -> build/lib.linux-x86_64-cpython-313/tiktoken
+      copying tiktoken/core.py -> build/lib.linux-x86_64-cpython-313/tiktoken
+      copying tiktoken/_educational.py -> build/lib.linux-x86_64-cpython-313/tiktoken
+      copying tiktoken/__init__.py -> build/lib.linux-x86_64-cpython-313/tiktoken
+      creating build/lib.linux-x86_64-cpython-313/tiktoken_ext
+      copying tiktoken_ext/openai_public.py -> build/lib.linux-x86_64-cpython-313/tiktoken_ext
+      running egg_info
+      writing tiktoken.egg-info/PKG-INFO
+      writing dependency_links to tiktoken.egg-info/dependency_links.txt
+      writing requirements to tiktoken.egg-info/requires.txt
+      writing top-level names to tiktoken.egg-info/top_level.txt
+      reading manifest file 'tiktoken.egg-info/SOURCES.txt'
+      reading manifest template 'MANIFEST.in'
+      warning: no files found matching 'Makefile'
+      adding license file 'LICENSE'
+      writing manifest file 'tiktoken.egg-info/SOURCES.txt'
+      copying tiktoken/py.typed -> build/lib.linux-x86_64-cpython-313/tiktoken
+      running build_ext
+      running build_rust
+          Updating crates.io index
+           Locking 41 packages to latest compatible versions
+            Adding fancy-regex v0.11.0 (available: v0.17.0)
+            Adding pyo3 v0.20.3 (available: v0.27.2)
+            Adding rustc-hash v1.1.0 (available: v2.1.1)
+       Downloading crates ...
+        Downloaded cfg-if v1.0.4
+        Downloaded bit-set v0.5.3
+        Downloaded heck v0.4.1
+        Downloaded bit-vec v0.6.3
+        Downloaded autocfg v1.5.0
+        Downloaded scopeguard v1.2.0
+        Downloaded memoffset v0.9.1
+        Downloaded pyo3-macros v0.20.3
+        Downloaded rustc-hash v1.1.0
+        Downloaded windows-link v0.2.1
+        Downloaded unindent v0.2.4
+        Downloaded bitflags v2.10.0
+        Downloaded lock_api v0.4.14
+        Downloaded redox_syscall v0.5.18
+        Downloaded target-lexicon v0.12.16
+        Downloaded quote v1.0.42
+        Downloaded parking_lot_core v0.9.12
+        Downloaded unicode-ident v1.0.22
+        Downloaded rustversion v1.0.22
+        Downloaded pyo3-build-config v0.20.3
+        Downloaded fancy-regex v0.11.0
+        Downloaded pyo3-macros-backend v0.20.3
+        Downloaded parking_lot v0.12.5
+        Downloaded serde_core v1.0.228
+        Downloaded serde_derive v1.0.228
+        Downloaded proc-macro2 v1.0.103
+        Downloaded serde v1.0.228
+        Downloaded pyo3-ffi v0.20.3
+        Downloaded memchr v2.7.6
+        Downloaded smallvec v1.15.1
+        Downloaded regex v1.12.2
+        Downloaded aho-corasick v1.1.4
+        Downloaded portable-atomic v1.12.0
+        Downloaded once_cell v1.21.3
+        Downloaded indoc v2.0.7
+        Downloaded syn v2.0.111
+        Downloaded bstr v1.12.1
+        Downloaded regex-syntax v0.8.8
+        Downloaded pyo3 v0.20.3
+        Downloaded regex-automata v0.4.13
+        Downloaded libc v0.2.178
+      cargo rustc --lib --message-format=json-render-diagnostics --manifest-path Cargo.toml --release -v --features pyo3/extension-module --crate-type cdylib --
+         Compiling target-lexicon v0.12.16
+         Compiling once_cell v1.21.3
+         Compiling proc-macro2 v1.0.103
+         Compiling unicode-ident v1.0.22
+         Compiling quote v1.0.42
+         Compiling libc v0.2.178
+         Compiling memchr v2.7.6
+         Compiling regex-syntax v0.8.8
+         Compiling autocfg v1.5.0
+         Compiling parking_lot_core v0.9.12
+         Compiling scopeguard v1.2.0
+         Compiling smallvec v1.15.1
+         Compiling heck v0.4.1
+         Compiling portable-atomic v1.12.0
+         Compiling cfg-if v1.0.4
+         Compiling bit-vec v0.6.3
+         Compiling indoc v2.0.7
+         Compiling unindent v0.2.4
+         Compiling rustc-hash v1.1.0
+           Running `rustc --crate-name once_cell --edition=2021 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/once_cell-1.21.3/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debug-assertions=off --cfg 'feature="alloc"' --cfg 'feature="default"' --cfg 'feature="race"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("alloc", "atomic-polyfill", "critical-section", "default", "parking_lot", "portable-atomic", "race", "std", "unstable"))' -C metadata=729124d6c72ae02d -C extra-filename=-d0e11e673c66be04 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow`
+           Running `rustc --crate-name build_script_build --edition=2018 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/target-lexicon-0.12.16/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debug-assertions=off --cfg 'feature="default"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("arch_zkasm", "default", "serde", "serde_support", "std"))' -C metadata=1b30cb6381a585b4 -C extra-filename=-c8f7fcefff394887 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/target-lexicon-c8f7fcefff394887 -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow`
+           Running `rustc --crate-name build_script_build --edition=2021 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.103/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debug-assertions=off --cfg 'feature="proc-macro"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "nightly", "proc-macro", "span-locations"))' -C metadata=9ff326fbdd791f44 -C extra-filename=-dda1cbdf792f0596 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/proc-macro2-dda1cbdf792f0596 -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow`
+           Running `rustc --crate-name build_script_build --edition=2018 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.42/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debug-assertions=off --cfg 'feature="default"' --cfg 'feature="proc-macro"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "proc-macro"))' -C metadata=fb356da574bc1cf0 -C extra-filename=-385fd6ef8d508520 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/quote-385fd6ef8d508520 -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow`
+           Running `rustc --crate-name build_script_build --edition=2021 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.178/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no '--allow=clippy::used_underscore_binding' --allow=unused_qualifications '--warn=clippy::unnecessary_semicolon' '--allow=clippy::unnecessary_cast' '--allow=clippy::uninlined_format_args' '--warn=clippy::ptr_as_ptr' '--allow=clippy::non_minimal_cfg' '--allow=clippy::missing_safety_doc' '--warn=clippy::map_unwrap_or' '--warn=clippy::manual_assert' '--allow=clippy::identity_op' '--warn=clippy::explicit_iter_loop' '--allow=clippy::expl_impl_clone_on_copy' -C debug-assertions=off --cfg 'feature="default"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("align", "const-extern-fn", "default", "extra_traits", "rustc-dep-of-std", "rustc-std-workspace-core", "std", "use_std"))' -C metadata=b37199e7413c907b -C extra-filename=-980f832a3d874127 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/libc-980f832a3d874127 -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow`
+           Running `rustc --crate-name unicode_ident --edition=2018 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unicode-ident-1.0.22/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debug-assertions=off --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=c0f485e9ea71fdce -C extra-filename=-8e72f9ba980dfbc0 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow`
+           Running `rustc --crate-name memchr --edition=2021 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memchr-2.7.6/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no --cfg 'feature="alloc"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("alloc", "core", "default", "libc", "logging", "rustc-dep-of-std", "std", "use_std"))' -C metadata=683ef5cf52f3de22 -C extra-filename=-351d1ea2f41edd05 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow`
+           Running `rustc --crate-name regex_syntax --edition=2021 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-syntax-0.8.8/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no --allow=unexpected_cfgs --check-cfg 'cfg(docsrs_regex)' --cfg 'feature="default"' --cfg 'feature="std"' --cfg 'feature="unicode"' --cfg 'feature="unicode-age"' --cfg 'feature="unicode-bool"' --cfg 'feature="unicode-case"' --cfg 'feature="unicode-gencat"' --cfg 'feature="unicode-perl"' --cfg 'feature="unicode-script"' --cfg 'feature="unicode-segment"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("arbitrary", "default", "std", "unicode", "unicode-age", "unicode-bool", "unicode-case", "unicode-gencat", "unicode-perl", "unicode-script", "unicode-segment"))' -C metadata=904e64dbc8552e0a -C extra-filename=-8c49f2a69c3d1f0c --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow`
+           Running `rustc --crate-name autocfg --edition=2015 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/autocfg-1.5.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debug-assertions=off --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=0d52101e7e2739a4 -C extra-filename=-eaf703725c0e23c0 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow`
+           Running `rustc --crate-name build_script_build --edition=2021 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/parking_lot_core-0.9.12/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debug-assertions=off --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("backtrace", "deadlock_detection", "nightly", "petgraph"))' -C metadata=4f607e2234f2326e -C extra-filename=-c4808859183154e5 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/parking_lot_core-c4808859183154e5 -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow`
+           Running `rustc --crate-name scopeguard --edition=2015 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scopeguard-1.2.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "use_std"))' -C metadata=64aad1cd53f92ce9 -C extra-filename=-bfde4f947c12c8b6 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow`
+           Running `rustc --crate-name smallvec --edition=2018 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/smallvec-1.15.1/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("arbitrary", "bincode", "const_generics", "const_new", "debugger_visualizer", "drain_filter", "drain_keep_rest", "impl_bincode", "malloc_size_of", "may_dangle", "serde", "specialization", "union", "unty", "write"))' -C metadata=63cfa436632fc364 -C extra-filename=-51608f7fcd294122 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow`
+           Running `rustc --crate-name heck --edition=2018 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/heck-0.4.1/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debug-assertions=off --cfg 'feature="default"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "unicode", "unicode-segmentation"))' -C metadata=e67d6cc37905eb92 -C extra-filename=-585878ce6d6b1c96 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow`
+           Running `rustc --crate-name build_script_build --edition=2018 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/portable-atomic-1.12.0/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no '--warn=clippy::unused_trait_names' --warn=unreachable_pub --warn=unnameable_types --warn=unexpected_cfgs '--warn=clippy::undocumented_unsafe_blocks' '--warn=clippy::transmute_undefined_repr' '--warn=clippy::trailing_empty_array' --warn=single_use_lifetimes --warn=rust_2018_idioms '--warn=clippy::pedantic' --warn=non_ascii_idents '--warn=clippy::inline_asm_x86_att_syntax' --warn=improper_ctypes_definitions --warn=improper_ctypes --warn=deprecated_safe '--warn=clippy::default_union_representation' '--warn=clippy::as_underscore' '--warn=clippy::as_ptr_cast_mut' '--warn=clippy::all' '--allow=clippy::unreadable_literal' '--allow=clippy::type_complexity' '--allow=clippy::too_many_lines' '--allow=clippy::too_many_arguments' '--allow=clippy::struct_field_names' '--allow=clippy::struct_excessive_bools' '--allow=clippy::single_match_else' '--allow=clippy::single_match' '--allow=clippy::similar_names' '--allow=clippy::range_plus_one' '--allow=clippy::nonminimal_bool' '--allow=clippy::naive_bytecount' '--allow=clippy::module_name_repetitions' '--allow=clippy::missing_errors_doc' '--allow=clippy::manual_range_contains' '--allow=clippy::manual_assert' '--allow=clippy::lint_groups_priority' '--allow=clippy::incompatible_msrv' '--allow=clippy::float_cmp' '--allow=clippy::doc_markdown' '--allow=clippy::declare_interior_mutable_const' '--allow=clippy::cast_lossless' '--allow=clippy::borrow_as_ptr' '--allow=clippy::bool_assert_comparison' --check-cfg 'cfg(target_arch,values("xtensa"))' --check-cfg 'cfg(target_arch,values("amdgpu"))' --check-cfg 'cfg(target_arch,values("loongarch32"))' --check-cfg 'cfg(target_os,values("trusty"))' --check-cfg 'cfg(target_os,values("psx"))' --check-cfg 'cfg(target_env,values("psx"))' --check-cfg 'cfg(target_feature,values("lse2","lse128","rcpc3"))' --check-cfg 'cfg(target_feature,values("quadword-atomics"))' --check-cfg 'cfg(target_feature,values("zaamo","zabha"))' --check-cfg 'cfg(target_feature,values("zacas"))' --check-cfg 'cfg(target_feature,values("miscellaneous-extensions-3"))' --check-cfg 'cfg(target_pointer_width,values("128"))' --check-cfg 'cfg(portable_atomic_no_outline_atomics,portable_atomic_outline_atomics,portable_atomic_unstable_f16,portable_atomic_unstable_f128)' --check-cfg 'cfg(portable_atomic_unstable_coerce_unsized)' --check-cfg 'cfg(portable_atomic_test_detect_false,portable_atomic_test_no_std_static_assert_ffi,qemu,valgrind)' -C debug-assertions=off --cfg 'feature="default"' --cfg 'feature="fallback"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("critical-section", "default", "disable-fiq", "fallback", "float", "force-amo", "require-cas", "s-mode", "serde", "std", "unsafe-assume-single-core"))' -C metadata=947d33e02d6c9d57 -C extra-filename=-8a85392f9c17a598 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/portable-atomic-8a85392f9c17a598 -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow`
+           Running `rustc --crate-name cfg_if --edition=2018 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cfg-if-1.0.4/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("core", "rustc-dep-of-std"))' -C metadata=d688e85a8ddc19ef -C extra-filename=-64a935e32d749092 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow`
+           Running `rustc --crate-name bit_vec --edition=2015 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bit-vec-0.6.3/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "serde", "serde_no_std", "serde_std", "std"))' -C metadata=948b0bb65e32d992 -C extra-filename=-f80c5b8623523874 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow`
+           Running `rustc --crate-name indoc --edition=2021 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/indoc-2.0.7/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type proc-macro --emit=dep-info,link -C prefer-dynamic -C embed-bitcode=no -C debug-assertions=off --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=1d093150881885b6 -C extra-filename=-69e7846df1f0a9bc --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --extern proc_macro --cap-lints allow`
+           Running `rustc --crate-name rustc_hash --edition=2015 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustc-hash-1.1.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no --cfg 'feature="default"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "std"))' -C metadata=643e19ba33ec6319 -C extra-filename=-ca804fc33b3e59e9 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow`
+           Running `rustc --crate-name unindent --edition=2021 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unindent-0.2.4/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=d8abcb680fe0c3e3 -C extra-filename=-21781755469e41a6 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow`
+         Compiling lock_api v0.4.14
+           Running `rustc --crate-name lock_api --edition=2021 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.14/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no --cfg 'feature="atomic_usize"' --cfg 'feature="default"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("arc_lock", "atomic_usize", "default", "nightly", "owning_ref", "serde"))' -C metadata=8c45b6103607d6b2 -C extra-filename=-2761927005557311 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --extern scopeguard=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps/libscopeguard-bfde4f947c12c8b6.rmeta --cap-lints allow`
+           Running `/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/parking_lot_core-c4808859183154e5/build-script-build`
+           Running `/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/quote-385fd6ef8d508520/build-script-build`
+         Compiling bit-set v0.5.3
+           Running `rustc --crate-name bit_set --edition=2015 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bit-set-0.5.3/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no --cfg 'feature="default"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "std"))' -C metadata=c40ede837b047dea -C extra-filename=-7cf7968704bdf3b1 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --extern bit_vec=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps/libbit_vec-f80c5b8623523874.rmeta --cap-lints allow`
+           Running `/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/proc-macro2-dda1cbdf792f0596/build-script-build`
+           Running `/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/libc-980f832a3d874127/build-script-build`
+         Compiling memoffset v0.9.1
+           Running `rustc --crate-name build_script_build --edition=2015 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memoffset-0.9.1/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debug-assertions=off --cfg 'feature="default"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "unstable_const", "unstable_offset_of"))' -C metadata=a017483e75d0a0c0 -C extra-filename=-4e934c4de68f1f99 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/memoffset-4e934c4de68f1f99 -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --extern autocfg=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps/libautocfg-eaf703725c0e23c0.rlib --cap-lints allow`
+           Running `rustc --crate-name proc_macro2 --edition=2021 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.103/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debug-assertions=off --cfg 'feature="proc-macro"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "nightly", "proc-macro", "span-locations"))' -C metadata=cc8cb1663bb0efd9 -C extra-filename=-76a64f8c3701da9f --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --extern unicode_ident=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps/libunicode_ident-8e72f9ba980dfbc0.rmeta --cap-lints allow --cfg wrap_proc_macro --check-cfg 'cfg(fuzzing)' --check-cfg 'cfg(no_is_available)' --check-cfg 'cfg(no_literal_byte_character)' --check-cfg 'cfg(no_literal_c_string)' --check-cfg 'cfg(no_source_text)' --check-cfg 'cfg(proc_macro_span)' --check-cfg 'cfg(proc_macro_span_file)' --check-cfg 'cfg(proc_macro_span_location)' --check-cfg 'cfg(procmacro2_backtrace)' --check-cfg 'cfg(procmacro2_build_probe)' --check-cfg 'cfg(procmacro2_nightly_testing)' --check-cfg 'cfg(procmacro2_semver_exempt)' --check-cfg 'cfg(randomize_layout)' --check-cfg 'cfg(span_locations)' --check-cfg 'cfg(super_unstable)' --check-cfg 'cfg(wrap_proc_macro)'`
+           Running `rustc --crate-name libc --edition=2021 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.178/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no '--allow=clippy::used_underscore_binding' --allow=unused_qualifications '--warn=clippy::unnecessary_semicolon' '--allow=clippy::unnecessary_cast' '--allow=clippy::uninlined_format_args' '--warn=clippy::ptr_as_ptr' '--allow=clippy::non_minimal_cfg' '--allow=clippy::missing_safety_doc' '--warn=clippy::map_unwrap_or' '--warn=clippy::manual_assert' '--allow=clippy::identity_op' '--warn=clippy::explicit_iter_loop' '--allow=clippy::expl_impl_clone_on_copy' --cfg 'feature="default"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("align", "const-extern-fn", "default", "extra_traits", "rustc-dep-of-std", "rustc-std-workspace-core", "std", "use_std"))' -C metadata=f729d0392c3bcba6 -C extra-filename=-6cd795ac0173d926 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow --cfg freebsd12 --check-cfg 'cfg(emscripten_old_stat_abi)' --check-cfg 'cfg(espidf_time32)' --check-cfg 'cfg(freebsd10)' --check-cfg 'cfg(freebsd11)' --check-cfg 'cfg(freebsd12)' --check-cfg 'cfg(freebsd13)' --check-cfg 'cfg(freebsd14)' --check-cfg 'cfg(freebsd15)' --check-cfg 'cfg(gnu_file_offset_bits64)' --check-cfg 'cfg(gnu_time_bits64)' --check-cfg 'cfg(libc_deny_warnings)' --check-cfg 'cfg(linux_time_bits64)' --check-cfg 'cfg(musl_v1_2_3)' --check-cfg 'cfg(vxworks_lt_25_09)' --check-cfg 'cfg(target_os,values("switch","aix","ohos","hurd","rtems","visionos","nuttx","cygwin"))' --check-cfg 'cfg(target_env,values("illumos","wasi","aix","ohos","nto71_iosock","nto80"))' --check-cfg 'cfg(target_arch,values("loongarch64","mips32r6","mips64r6","csky"))'`
+           Running `/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/portable-atomic-8a85392f9c17a598/build-script-build`
+           Running `rustc --crate-name portable_atomic --edition=2018 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/portable-atomic-1.12.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no '--warn=clippy::unused_trait_names' --warn=unreachable_pub --warn=unnameable_types --warn=unexpected_cfgs '--warn=clippy::undocumented_unsafe_blocks' '--warn=clippy::transmute_undefined_repr' '--warn=clippy::trailing_empty_array' --warn=single_use_lifetimes --warn=rust_2018_idioms '--warn=clippy::pedantic' --warn=non_ascii_idents '--warn=clippy::inline_asm_x86_att_syntax' --warn=improper_ctypes_definitions --warn=improper_ctypes --warn=deprecated_safe '--warn=clippy::default_union_representation' '--warn=clippy::as_underscore' '--warn=clippy::as_ptr_cast_mut' '--warn=clippy::all' '--allow=clippy::unreadable_literal' '--allow=clippy::type_complexity' '--allow=clippy::too_many_lines' '--allow=clippy::too_many_arguments' '--allow=clippy::struct_field_names' '--allow=clippy::struct_excessive_bools' '--allow=clippy::single_match_else' '--allow=clippy::single_match' '--allow=clippy::similar_names' '--allow=clippy::range_plus_one' '--allow=clippy::nonminimal_bool' '--allow=clippy::naive_bytecount' '--allow=clippy::module_name_repetitions' '--allow=clippy::missing_errors_doc' '--allow=clippy::manual_range_contains' '--allow=clippy::manual_assert' '--allow=clippy::lint_groups_priority' '--allow=clippy::incompatible_msrv' '--allow=clippy::float_cmp' '--allow=clippy::doc_markdown' '--allow=clippy::declare_interior_mutable_const' '--allow=clippy::cast_lossless' '--allow=clippy::borrow_as_ptr' '--allow=clippy::bool_assert_comparison' --check-cfg 'cfg(target_arch,values("xtensa"))' --check-cfg 'cfg(target_arch,values("amdgpu"))' --check-cfg 'cfg(target_arch,values("loongarch32"))' --check-cfg 'cfg(target_os,values("trusty"))' --check-cfg 'cfg(target_os,values("psx"))' --check-cfg 'cfg(target_env,values("psx"))' --check-cfg 'cfg(target_feature,values("lse2","lse128","rcpc3"))' --check-cfg 'cfg(target_feature,values("quadword-atomics"))' --check-cfg 'cfg(target_feature,values("zaamo","zabha"))' --check-cfg 'cfg(target_feature,values("zacas"))' --check-cfg 'cfg(target_feature,values("miscellaneous-extensions-3"))' --check-cfg 'cfg(target_pointer_width,values("128"))' --check-cfg 'cfg(portable_atomic_no_outline_atomics,portable_atomic_outline_atomics,portable_atomic_unstable_f16,portable_atomic_unstable_f128)' --check-cfg 'cfg(portable_atomic_unstable_coerce_unsized)' --check-cfg 'cfg(portable_atomic_test_detect_false,portable_atomic_test_no_std_static_assert_ffi,qemu,valgrind)' --cfg 'feature="default"' --cfg 'feature="fallback"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("critical-section", "default", "disable-fiq", "fallback", "float", "force-amo", "require-cas", "s-mode", "serde", "std", "unsafe-assume-single-core"))' -C metadata=05612910b766178d -C extra-filename=-648b6cc94aba94b3 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow --cfg portable_atomic_pre_llvm_20 --check-cfg 'cfg(target_feature,values("lsfe","fast-serialization","load-store-on-cond","distinct-ops"))' --check-cfg 'cfg(portable_atomic_disable_fiq,portable_atomic_force_amo,portable_atomic_ll_sc_rmw,portable_atomic_atomic_intrinsics,portable_atomic_no_asm,portable_atomic_no_asm_maybe_uninit,portable_atomic_no_atomic_64,portable_atomic_no_atomic_cas,portable_atomic_no_atomic_load_store,portable_atomic_no_atomic_min_max,portable_atomic_no_cfg_target_has_atomic,portable_atomic_no_cmpxchg16b_intrinsic,portable_atomic_no_cmpxchg16b_target_feature,portable_atomic_no_const_mut_refs,portable_atomic_no_const_raw_ptr_deref,portable_atomic_no_const_transmute,portable_atomic_no_core_unwind_safe,portable_atomic_no_diagnostic_namespace,portable_atomic_no_strict_provenance,portable_atomic_no_stronger_failure_ordering,portable_atomic_no_track_caller,portable_atomic_no_unsafe_op_in_unsafe_fn,portable_atomic_pre_llvm_15,portable_atomic_pre_llvm_16,portable_atomic_pre_llvm_18,portable_atomic_pre_llvm_20,portable_atomic_s_mode,portable_atomic_sanitize_thread,portable_atomic_target_feature,portable_atomic_unsafe_assume_single_core,portable_atomic_unstable_asm,portable_atomic_unstable_asm_experimental_arch,portable_atomic_unstable_cfg_target_has_atomic,portable_atomic_unstable_isa_attribute)' --check-cfg 'cfg(portable_atomic_target_feature,values("cmpxchg16b","distinct-ops","fast-serialization","load-store-on-cond","lse","lse128","lse2","lsfe","mclass","miscellaneous-extensions-3","quadword-atomics","rcpc3","v6","zaamo","zabha","zacas"))'`
+           Running `/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/target-lexicon-c8f7fcefff394887/build-script-build`
+           Running `/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/memoffset-4e934c4de68f1f99/build-script-build`
+           Running `rustc --crate-name target_lexicon --edition=2018 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/target-lexicon-0.12.16/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debug-assertions=off --cfg 'feature="default"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("arch_zkasm", "default", "serde", "serde_support", "std"))' -C metadata=f1934710a3bb78b8 -C extra-filename=-144b5b30bd95d66b --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow --cfg 'feature="rust_1_40"'`
+           Running `rustc --crate-name memoffset --edition=2015 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memoffset-0.9.1/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no --cfg 'feature="default"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "unstable_const", "unstable_offset_of"))' -C metadata=f5f296edff42cf05 -C extra-filename=-766ce08cafdfd484 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --cap-lints allow --cfg tuple_ty --cfg allow_clippy --cfg maybe_uninit --cfg doctests --cfg raw_ref_macros --cfg stable_const --cfg stable_offset_of`
+         Compiling aho-corasick v1.1.4
+           Running `rustc --crate-name aho_corasick --edition=2021 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aho-corasick-1.1.4/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no --cfg 'feature="perf-literal"' --cfg 'feature="std"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "logging", "perf-literal", "std"))' -C metadata=869937119816ec95 -C extra-filename=-bf81f3c310c738c6 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --extern memchr=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps/libmemchr-351d1ea2f41edd05.rmeta --cap-lints allow`
+         Compiling pyo3-build-config v0.20.3
+           Running `rustc --crate-name build_script_build --edition=2021 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.20.3/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debug-assertions=off --cfg 'feature="default"' --cfg 'feature="extension-module"' --cfg 'feature="resolve-config"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("abi3", "abi3-py310", "abi3-py311", "abi3-py312", "abi3-py37", "abi3-py38", "abi3-py39", "default", "extension-module", "python3-dll-a", "resolve-config"))' -C metadata=28327803a5740962 -C extra-filename=-2e7a57fb1aa2e341 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/pyo3-build-config-2e7a57fb1aa2e341 -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --extern target_lexicon=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps/libtarget_lexicon-144b5b30bd95d66b.rlib --cap-lints allow`
+           Running `rustc --crate-name quote --edition=2018 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.42/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debug-assertions=off --cfg 'feature="default"' --cfg 'feature="proc-macro"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("default", "proc-macro"))' -C metadata=b26a14d61f34c3d8 -C extra-filename=-1281eca495b9f045 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --extern proc_macro2=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps/libproc_macro2-76a64f8c3701da9f.rmeta --cap-lints allow --check-cfg 'cfg(no_diagnostic_namespace)'`
+         Compiling syn v2.0.111
+           Running `rustc --crate-name syn --edition=2021 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.111/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debug-assertions=off --cfg 'feature="clone-impls"' --cfg 'feature="default"' --cfg 'feature="derive"' --cfg 'feature="extra-traits"' --cfg 'feature="full"' --cfg 'feature="parsing"' --cfg 'feature="printing"' --cfg 'feature="proc-macro"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("clone-impls", "default", "derive", "extra-traits", "fold", "full", "parsing", "printing", "proc-macro", "test", "visit", "visit-mut"))' -C metadata=11f71e41e4e30765 -C extra-filename=-3bb880cc0562d446 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --extern proc_macro2=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps/libproc_macro2-76a64f8c3701da9f.rmeta --extern quote=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps/libquote-1281eca495b9f045.rmeta --extern unicode_ident=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps/libunicode_ident-8e72f9ba980dfbc0.rmeta --cap-lints allow`
+           Running `/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/pyo3-build-config-2e7a57fb1aa2e341/build-script-build`
+           Running `rustc --crate-name pyo3_build_config --edition=2021 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-build-config-0.20.3/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debug-assertions=off --cfg 'feature="default"' --cfg 'feature="extension-module"' --cfg 'feature="resolve-config"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("abi3", "abi3-py310", "abi3-py311", "abi3-py312", "abi3-py37", "abi3-py38", "abi3-py39", "default", "extension-module", "python3-dll-a", "resolve-config"))' -C metadata=7098740634aaa16c -C extra-filename=-7a28b68492cffac6 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --extern once_cell=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps/libonce_cell-d0e11e673c66be04.rmeta --extern target_lexicon=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps/libtarget_lexicon-144b5b30bd95d66b.rmeta --cap-lints allow`
+           Running `rustc --crate-name parking_lot_core --edition=2021 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/parking_lot_core-0.9.12/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("backtrace", "deadlock_detection", "nightly", "petgraph"))' -C metadata=82511a036ba0a7d3 -C extra-filename=-7360eee81b806918 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --extern cfg_if=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps/libcfg_if-64a935e32d749092.rmeta --extern libc=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps/liblibc-6cd795ac0173d926.rmeta --extern smallvec=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps/libsmallvec-51608f7fcd294122.rmeta --cap-lints allow --check-cfg 'cfg(tsan_enabled)'`
+         Compiling pyo3-ffi v0.20.3
+         Compiling pyo3 v0.20.3
+           Running `rustc --crate-name build_script_build --edition=2021 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-ffi-0.20.3/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no '--warn=clippy::useless_transmute' '--warn=clippy::used_underscore_binding' --warn=unused_lifetimes --allow=unused_imports '--warn=clippy::unnecessary_wraps' '--warn=clippy::todo' --warn=rust_2021_prelude_collisions --warn=rust_2018_idioms '--warn=clippy::manual_ok_or' '--warn=clippy::manual_assert' '--warn=clippy::let_unit_value' --warn=invalid_doc_attributes '--warn=clippy::flat_map_option' '--warn=clippy::filter_map_next' '--warn=clippy::explicit_iter_loop' '--warn=clippy::explicit_into_iter_loop' --warn=elided_lifetimes_in_paths --allow=dead_code '--warn=clippy::dbg_macro' '--warn=clippy::checked_conversions' '--warn=rustdoc::broken_intra_doc_links' '--warn=rustdoc::bare_urls' -C debug-assertions=off --cfg 'feature="default"' --cfg 'feature="extension-module"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("abi3", "abi3-py310", "abi3-py311", "abi3-py312", "abi3-py37", "abi3-py38", "abi3-py39", "default", "extension-module", "generate-import-lib"))' -C metadata=cb4822ba65cf4b67 -C extra-filename=-e5908945855e9b28 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/pyo3-ffi-e5908945855e9b28 -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --extern pyo3_build_config=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps/libpyo3_build_config-7a28b68492cffac6.rlib --cap-lints allow`
+           Running `rustc --crate-name build_script_build --edition=2021 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pyo3-0.20.3/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no '--warn=clippy::useless_transmute' '--warn=clippy::used_underscore_binding' --warn=unused_lifetimes --allow=unused_imports '--warn=clippy::unnecessary_wraps' '--warn=clippy::todo' --warn=rust_2021_prelude_collisions --warn=rust_2018_idioms '--warn=clippy::manual_ok_or' '--warn=clippy::manual_assert' '--warn=clippy::let_unit_value' --warn=invalid_doc_attributes '--warn=clippy::flat_map_option' '--warn=clippy::filter_map_next' '--warn=clippy::explicit_iter_loop' '--warn=clippy::explicit_into_iter_loop' --warn=elided_lifetimes_in_paths --allow=dead_code '--warn=clippy::dbg_macro' '--warn=clippy::checked_conversions' '--warn=rustdoc::broken_intra_doc_links' '--warn=rustdoc::bare_urls' -C debug-assertions=off --cfg 'feature="default"' --cfg 'feature="extension-module"' --cfg 'feature="indoc"' --cfg 'feature="macros"' --cfg 'feature="pyo3-macros"' --cfg 'feature="unindent"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("abi3", "abi3-py310", "abi3-py311", "abi3-py312", "abi3-py37", "abi3-py38", "abi3-py39", "anyhow", "auto-initialize", "chrono", "default", "either", "experimental-inspect", "extension-module", "eyre", "full", "generate-import-lib", "hashbrown", "indexmap", "indoc", "inventory", "macros", "multiple-pymethods", "nightly", "num-bigint", "num-complex", "pyo3-macros", "rust_decimal", "serde", "smallvec", "unindent"))' -C metadata=9766887c14747ca4 -C extra-filename=-6b99613bff541335 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/pyo3-6b99613bff541335 -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --extern pyo3_build_config=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps/libpyo3_build_config-7a28b68492cffac6.rlib --cap-lints allow`
+         Compiling parking_lot v0.12.5
+           Running `rustc --crate-name parking_lot --edition=2021 /root/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/parking_lot-0.12.5/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no --cfg 'feature="default"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("arc_lock", "deadlock_detection", "default", "hardware-lock-elision", "nightly", "owning_ref", "send_guard", "serde"))' -C metadata=dad0dd64f7ad133f -C extra-filename=-8c1af495f7f75304 --out-dir /tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps -C strip=debuginfo -L dependency=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps --extern lock_api=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps/liblock_api-2761927005557311.rmeta --extern parking_lot_core=/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/deps/libparking_lot_core-7360eee81b806918.rmeta --cap-lints allow`
+           Running `/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/pyo3-ffi-e5908945855e9b28/build-script-build`
+      error: failed to run custom build command for `pyo3-ffi v0.20.3`
+      
+      Caused by:
+        process didn't exit successfully: `/tmp/pip-install-op9sovqj/tiktoken_1cdfdebdb22f443f8cdaa5a7877fd298/target/release/build/pyo3-ffi-e5908945855e9b28/build-script-build` (exit status: 1)
+        --- stdout
+        cargo:rerun-if-env-changed=PYO3_CROSS
+        cargo:rerun-if-env-changed=PYO3_CROSS_LIB_DIR
+        cargo:rerun-if-env-changed=PYO3_CROSS_PYTHON_VERSION
+        cargo:rerun-if-env-changed=PYO3_CROSS_PYTHON_IMPLEMENTATION
+        cargo:rerun-if-env-changed=PYO3_PRINT_CONFIG
+        cargo:rerun-if-env-changed=PYO3_USE_ABI3_FORWARD_COMPATIBILITY
+      
+        --- stderr
+        error: the configured Python interpreter version (3.13) is newer than PyO3's maximum supported version (3.12)
+        = help: please check if an updated version of PyO3 is available. Current version: 0.20.3
+        = help: set PYO3_USE_ABI3_FORWARD_COMPATIBILITY=1 to suppress this check and build anyway using the stable ABI
+      warning: build failed, waiting for other jobs to finish...
+      error: `cargo rustc --lib --message-format=json-render-diagnostics --manifest-path Cargo.toml --release -v --features pyo3/extension-module --crate-type cdylib --` failed with code 101
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for tiktoken
+error: failed-wheel-build-for-install
+
+× Failed to build installable wheels for some pyproject.toml based projects
+╰─> tiktoken

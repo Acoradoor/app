@@ -1,0 +1,110 @@
+Configuración de correo en Android
+Datos necesarios (según lo que configuraste↴):
+Correo electrónico: toni@acoradoor.com
+Usuario: toni@acoradoor.com
+Contraseña: toni1 (o tu contraseña real)
+Servidor IMAP:
+Host: mail.acoradoor.com
+Puerto: 993
+Seguridad: SSL/TLS
+Servidor SMTP:
+Host: mail.acoradoor.com
+Puerto: 587
+Seguridad: STARTTLS
+Requiere autenticación: Sí
+(usuario y contraseña igual que arriba)
+Ejemplo para configurar en GMail (app Android)
+Abre Gmail > Menú ≡ > Añadir cuenta.
+
+Elige “Otra” (no Google, Yahoo…).
+
+Escribe tu correo completo (toni@acoradoor.com).
+
+Elige tipo de cuenta: Personal (IMAP).
+
+Pon tu contraseña.
+
+En “Configuración servidor entrante IMAP” escribe:
+
+Servidor: mail.acoradoor.com
+Puerto: 993
+Tipo de seguridad: SSL/TLS
+Usuario: toni@acoradoor.com
+Contraseña: tu contraseña
+En “Servidor saliente SMTP”:
+
+Servidor: mail.acoradoor.com
+Puerto: 587
+Tipo de seguridad: STARTTLS
+Requiere inicio de sesión: SÍ
+Usuario: toni@acoradoor.com
+Contraseña: tu contraseña
+Termina de configurar (nombre, firma, etc).
+
+Notas y consejos
+Si GMail avisa sobre el certificado, acepta si es válido (de Let's Encrypt).
+Si tu internet va por WiFi/datos y tienes router/firewall propio, los puertos 993 (IMAPS) y 587 (SMTP) deben estar abiertos y enrutar fuera de tu red local hacia tu servidor.
+Otras apps muy recomendables en Android: K-9 Mail (muy compatible, Open Source), Outlook Mobile.
+Resumen de configuración
+Parámetro	Valor
+Usuario	toni@acoradoor.com
+IMAP Host	mail.acoradoor.com
+IMAP Puerto	993
+IMAP Seguridad	SSL/TLS
+SMTP Host	mail.acoradoor.com
+SMTP Puerto	587
+SMTP Seguridad	STARTTLS
+SMTP auth	Sí, mismo usuario y clave
+¿Listo! Si tienes problema con alguna app/combinación de seguridad, dime exactamente el mensaje y la app. Pero con Let's Encrypt y Dovecot bien configurado, cualquier app moderna debería funcionar perfectamente.
+
+¿Quieres captura de pantalla de Gmail o K-9 y sus campos? ¿O te interesa configuración Exchange/ActiveSync? Avísame.
+
+You said: y en un iphone
+y en un iphone
+Copilot said: ¡Perfecto! Para configurar **tu correo en un
+¡Perfecto! Para configurar tu correo en un iPhone (iOS), los pasos son casi iguales.
+El iPhone es 100% compatible con IMAP/SMTP estándar, así que tus cuentas funcionan igual que en Android o Outlook.
+
+Pasos para configurar tu correo en iPhone/iPad (iOS Mail)
+Abre la app “Ajustes” (Settings).
+Busca y entra en Correo (Mail).
+Pulsa en Cuentas (Accounts) > Añadir cuenta (Add Account).
+Elige Otra (Other).
+Pulsa en Añadir cuenta de correo (Add Mail Account).
+Introduce tus datos:
+Nombre: (ejemplo, “Toni”)
+Correo: toni@acoradoor.com
+Contraseña: tu contraseña (ej: toni1)
+Descripción: (lo que tú quieras, ej. “Correo Acoradoor”)
+Pulsa Siguiente.
+
+Configura el servidor ENTRANTE (IMAP):
+Nombre de host: mail.acoradoor.com
+Usuario: toni@acoradoor.com
+Contraseña: tu contraseña
+Puerto: 993
+Usar SSL: Sí (debe estar activado, normalmente se detecta solo)
+Configura el servidor SALIENTE (SMTP):
+Nombre de host: mail.acoradoor.com
+Usuario: toni@acoradoor.com
+Contraseña: tu contraseña
+Puerto: 587
+Usar SSL: Sí (STARTTLS; en iPhone simplemente “SSL” debe estar activado y auto-negociará)
+Autenticación: contraseña (debe estar activado)
+Pulsa Siguiente y espera la verificación.
+Si te pregunta sobre “No se puede verificar identidad”, pulsa “Detalles” y luego “Confiar”.
+Si tienes Let’s Encrypt debe funcionar y quedarse como cuenta “Verificada”.
+Pulsa Guardar (Save).
+Notas útiles:
+Si ves un mensaje de “No se puede verificar identidad”, es normal la primera vez si iOS aún no ha visto tu certificado de Let's Encrypt. Es seguro aceptar y confiar si lo has puesto tú.
+Desde ese momento, puedes enviar y recibir desde la app “Mail” de iOS.
+Resumen de valores de configuración
+Campo	Valor
+Usuario	toni@acoradoor.com
+IMAP Host	mail.acoradoor.com
+IMAP Puerto	993
+IMAP SSL	Sí
+SMTP Host	mail.acoradoor.com
+SMTP Puerto	587
+SMTP SSL	Sí (STARTTLS / Automático)
+Autenticación	Usuario/contraseña
