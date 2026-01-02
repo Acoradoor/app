@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Iconos</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../assets/icons/font-awesome/css/font-awesome.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="../assets/icons/Ionicons/css/ionicons.css">
+    <!-- Glyphicons -->
+    <link rel="stylesheet" href="../assets/icons/glyphicons/glyphicon.css">
+    <!-- Icomoon -->
+    <link rel="stylesheet" href="../assets/icons/icomoon/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .icon-section {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .icon-section h2 {
+            margin-top: 0;
+            color: #555;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 15px;
+        }
+        .icon-item {
+            text-align: center;
+            padding: 10px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        .icon-item:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+        .icon-item i, .icon-item span {
+            font-size: 24px;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .icon-name {
+            font-size: 12px;
+            color: #666;
+            word-break: break-word;
+        }
+        .fa-icon {
+            font-size: 24px;
+        }
+        .ion-icon {
+            font-size: 24px;
+        }
+        .glyphicon {
+            font-size: 24px;
+        }
+        .icomoon-icon {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Iconos Disponibles</h1>
+
+    <!-- Font Awesome Icons -->
+    <div class="icon-section">
+        <h2>Font Awesome</h2>
+        <div class="icon-grid" id="font-awesome-icons">
+            <!-- Se llenarán dinámicamente con JavaScript -->
+        </div>
+    </div>
+
+    <!-- Ionicons -->
+    <div class="icon-section">
+        <h2>Ionicons</h2>
+        <div class="icon-grid" id="ionicons">
+            <!-- Se llenarán dinámicamente con JavaScript -->
+        </div>
+    </div>
+
+    <!-- Glyphicons -->
+    <div class="icon-section">
+        <h2>Glyphicons</h2>
+        <div class="icon-grid" id="glyphicons">
+            <!-- Se llenarán dinámicamente con JavaScript -->
+        </div>
+    </div>
+
+    <!-- Icomoon -->
+    <div class="icon-section">
+        <h2>Icomoon</h2>
+        <div class="icon-grid" id="icomoon">
+            <!-- Se llenarán dinámicamente con JavaScript -->
+        </div>
+    </div>
+
+    <script>
+        // Función para obtener nombres de iconos de Font Awesome
+        function getFontAwesomeIconNames() {
+            // Lista de iconos comunes de Font Awesome 4.7 (puedes ampliarla)
+            const faIcons = [
+                'fa-adjust', 'fa-adn', 'fa-align-center', 'fa-align-justify', 'fa-align-left',
+                'fa-align-right', 'fa-amazon', 'fa-ambulance', 'fa-american-sign-language-interpreting',
+                'fa-anchor', 'fa-android', 'fa-angellist', 'fa-angle-double-down', 'fa-angle-double-left',
+                'fa-angle-double-right', 'fa-angle-double-up', 'fa-angle-down', 'fa-angle-left',
+                'fa-angle-right', 'fa-angle-up', 'fa-apple', 'fa-archive', 'fa-area-chart',
+                'fa-arrow-circle-down', 'fa-arrow-circle-left', 'fa-arrow-circle-o-down', 'fa-arrow-circle-o-left',
+                'fa-arrow-circle-o-right', 'fa-arrow-circle-o-up', 'fa-arrow-circle-right', 'fa-arrow-circle-up',
+                'fa-arrow-down', 'fa-arrow-left', 'fa-arrow-right', 'fa-arrow-up', 'fa-arrows',
+                'fa-arrows-alt', 'fa-arrows-h', 'fa-arrows-v', 'fa-assistive-listening-systems', 'fa-asterisk',
+                'fa-at', 'fa-audio-description', 'fa-backward', 'fa-balance-scale', 'fa-ban',
+                'fa-bandcamp', 'fa-bar-chart', 'fa-barcode', 'fa-bars', 'fa-bath',
+                'fa-battery-empty', 'fa-battery-full', 'fa-battery-half', 'fa-battery-quarter', 'fa-battery-three-quarters',
+                'fa-bed', 'fa-beer', 'fa-behance', 'fa-behance-square', 'fa-bell',
+                'fa-bell-o', 'fa-bell-slash', 'fa-bell-slash-o', 'fa-bicycle', 'fa-binoculars',
+                'fa-birthday-cake', 'fa-bitbucket', 'fa-bitbucket-square', 'fa-bitcoin', 'fa-black-tie',
+                'fa-blind', 'fa-bluetooth', 'fa-bluetooth-b', 'fa-bold', 'fa-bolt',
+                'fa-bomb', 'fa-book', 'fa-bookmark', 'fa-bookmark-o', 'fa-braille',
+                'fa-briefcase', 'fa-btc', 'fa-bug', 'fa-building', 'fa-building-o',
+                'fa-bullhorn', 'fa-bullseye', 'fa-bus', 'fa-buysellads', 'fa-calculator',
+                'fa-calendar', 'fa-calendar-check-o', 'fa-calendar-minus-o', 'fa-calendar-o', 'fa-calendar-plus-o',
+                'fa-calendar-times-o', 'fa-camera', 'fa-camera-retro', 'fa-car', 'fa-caret-down',
+                'fa-caret-left', 'fa-caret-right', 'fa-caret-square-o-down', 'fa-caret-square-o-left', 'fa-caret-square-o-right',
+                'fa-caret-square-o-up', 'fa-caret-up', 'fa-cart-arrow-down', 'fa-cart-plus', 'fa-cc',
+                'fa-cc-amex', 'fa-cc-diners-club', 'fa-cc-discover', 'fa-cc-jcb', 'fa-cc-mastercard',
+                'fa-cc-paypal', 'fa-cc-stripe', 'fa-cc-visa', 'fa-certificate', 'fa-chain',
+                'fa-chain-broken', 'fa-check', 'fa-check-circle', 'fa-check-circle-o', 'fa-check-square',
+                'fa-check-square-o', 'fa-chevron-circle-down', 'fa-chevron-circle-left', 'fa-chevron-circle-right', 'fa-chevron-circle-up',
+                'fa-chevron-down', 'fa-chevron-left', 'fa-chevron-right', 'fa-chevron-up', 'fa-child',
+                'fa-chrome', 'fa-circle', 'fa-circle-o', 'fa-circle-o-notch', 'fa-circle-thin',
+                'fa-clipboard', 'fa-clock-o', 'fa-clone', 'fa-close', 'fa-cloud',
+                'fa-cloud-download', 'fa-cloud-upload', 'fa-cny', 'fa-code', 'fa-code-fork',
+                'fa-codepen', 'fa-codiepie', 'fa-coffee', 'fa-cog', 'fa-cogs',
+                'fa-columns', 'fa-comment', 'fa-comment-o', 'fa-commenting', 'fa-commenting-o',
+                'fa-comments', 'fa-comments-o', 'fa-compass', 'fa-compress', 'fa-connectdevelop',
+                'fa-contao', 'fa-copy', 'fa-copyright', 'fa-creative-commons', 'fa-credit-card',
+                'fa-credit-card-alt', 'fa-crop', 'fa-crosshairs', 'fa-css3', 'fa-cube',
+                'fa-cubes', 'fa-cut', 'fa-cutlery', 'fa-dashboard', 'fa-dashcube',
+                'fa-database', 'fa-deaf', 'fa-delicious', 'fa-desktop', 'fa-deviantart',
+                'fa-diamond', 'fa-digg', 'fa-dollar', 'fa-dot-circle-o', 'fa-download',
+                'fa-dribbble', 'fa-dropbox', 'fa-drupal', 'fa-edge', 'fa-edit',
+                'fa-eject', 'fa-ellipsis-h', 'fa-ellipsis-v', 'fa-empire', 'fa-envelope',
+                'fa-envelope-o', 'fa-envelope-square', 'fa-envira', 'fa-eraser', 'fa-etsy',
+                'fa-eur', 'fa-euro', 'fa-exchange', 'fa-exclamation', 'fa-exclamation-circle',
+                'fa-exclamation-triangle', 'fa-expand', 'fa-expeditedssl', 'fa-external-link', 'fa-external-link-square',
+                'fa-eye', 'fa-eye-slash', 'fa-eyedropper', 'fa-facebook', 'fa-facebook-f',
+                'fa-facebook-official', 'fa-facebook-square', 'fa-fast-backward', 'fa-fast-forward', 'fa-fax',
+                'fa-feed', 'fa-female', 'fa-fighter-jet', 'fa-file', 'fa-file-archive-o',
+                'fa-file-audio-o', 'fa-file-code-o', 'fa-file-excel-o', 'fa-file-image-o', 'fa-file-movie-o',
+                'fa-file-o', 'fa-file-pdf-o', 'fa-file-photo-o', 'fa-file-picture-o', 'fa-file-powerpoint-o',
+                'fa-file-sound-o', 'fa-file-text', 'fa-file-text-o', 'fa-file-video-o', 'fa-file-word-o',
+                'fa-file-zip-o', 'fa-files-o', 'fa-film', 'fa-filter', 'fa-fire',
+                'fa-fire-extinguisher', 'fa-firefox', 'fa-first-order', 'fa-flag', 'fa-flag-checkered',
+                'fa-flag-o', 'fa-flask', 'fa-flickr', 'fa-floppy-o', 'fa-folder',
+                'fa-folder-o', 'fa-folder-open', 'fa-folder-open-o', 'fa-font', 'fa-font-awesome',
+                'fa-fonticons', 'fa-fort-awesome', 'fa-forumbee', 'fa-forward', 'fa-foursquare',
+                'fa-frown-o', 'fa-futbol-o', 'fa-gamepad', 'fa-gavel', 'fa-gbp',
+                'fa-genderless', 'fa-get-pocket', 'fa-gg', 'fa-gg-circle', 'fa-gift',
+                'fa-git', 'fa-git-square', 'fa-github', 'fa-github-alt', 'fa-github-square',
+                'fa-gitlab', 'fa-gittip', 'fa-glass', 'fa-glide', 'fa-glide-g',
+                'fa-globe', 'fa-google', 'fa-google-plus', 'fa-google-plus-circle', 'fa-google-plus-official',
+                'fa-google-plus-square', 'fa-google-wallet', 'fa-graduation-cap', 'fa-gratipay', 'fa-h-square',
+                'fa-hacker-news', 'fa-hand-grab-o', 'fa-hand-lizard-o', 'fa-hand-o-down', 'fa-hand-o-left',
+                'fa-hand-o-right', 'fa-hand-o-up', 'fa-hand-paper-o', 'fa-hand-peace-o', 'fa-hand-pointer-o',
+                'fa-hand-rock-o', 'fa-hand-scissors-o', 'fa-hand-spock-o', 'fa-hand-stop-o', 'fa-hashtag',
+                'fa-hdd-o', 'fa-header', 'fa-headphones', 'fa-heart', 'fa-heart-o',
+                'fa-heartbeat', 'fa-history', 'fa-home', 'fa-hospital-o', 'fa-hourglass',
+                'fa-hourglass-1', 'fa-hourglass-2', 'fa-hourglass-3', 'fa-hourglass-end', 'fa-hourglass-half',
+                'fa-hourglass-o', 'fa-hourglass-start', 'fa-houzz', 'fa-html5', 'fa-i-cursor',
+                'fa-ils', 'fa-image', 'fa-imdb', 'fa-inbox', 'fa-indent',
+                'fa-industry', 'fa-info', 'fa-info-circle', 'fa-inr', 'fa-instagram',
+                'fa-institution', 'fa-internet-explorer', 'fa-ioxhost', 'fa-italic', 'fa-joomla',
+                'fa-jpy', 'fa-jsfiddle', 'fa-key', 'fa-keyboard-o', 'fa-krw',
+                'fa-language', 'fa-laptop', 'fa-lastfm', 'fa-lastfm-square', 'fa-leaf',
+                'fa-leanpub', 'fa-legal', 'fa-lemon-o', 'fa-level-down', 'fa-level-up',
+                'fa-life-bouy', 'fa-life-buoy', 'fa-life-ring', 'fa-life-saver', 'fa-lightbulb-o',
+                'fa-line-chart', 'fa-link', 'fa-linkedin', 'fa-linkedin-square', 'fa-linode',
+                'fa-linux', 'fa-list', 'fa-list-alt', 'fa-list-ol', 'fa-list-ul',
+                'fa-location-arrow', 'fa-lock', 'fa-long-arrow-down', 'fa-long-arrow-left', 'fa-long-arrow-right',
+                'fa-long-arrow-up', 'fa-low-vision', 'fa-magic', 'fa-magnet', 'fa-male',
+                'fa-map', 'fa-map-marker', 'fa-map-o', 'fa-map-pin', 'fa-map-signs',
+                'fa-mars', 'fa-mars-double', 'fa-mars-stroke', 'fa-mars-stroke-h', 'fa-mars-stroke-v',
+                'fa-maxcdn', 'fa-meanpath', 'fa-medium', 'fa-medkit', 'fa-meetup',
+                'fa-meh-o', 'fa-mercury', 'fa-microphone', 'fa-microphone-slash', 'fa-minus',
+                'fa-minus-circle', 'fa-minus-square', 'fa-minus-square-o', 'fa-mixcloud', 'fa-mobile',
+                'fa-mobile-phone', 'fa-modx', 'fa-money', 'fa-moon-o', 'fa-mortar-board',
+                'fa-motorcycle', 'fa-mouse-pointer', 'fa-music', 'fa-navicon', 'fa-neuter',
+                'fa-newspaper-o', 'fa-object-group', 'fa-object-ungroup', 'fa-odnoklassniki', 'fa-odnoklassniki-square',
+                'fa-opencart', 'fa-openid', 'fa-opera', 'fa-optin-monster', 'fa-outdent',
+                'fa-pagelines', 'fa-paint-brush', 'fa-paper-plane', 'fa-paper-plane-o', 'fa-paperclip',
+                'fa-paragraph', 'fa-paste', 'fa-pause', 'fa-pause-circle', 'fa-pause-circle-o',
+                'fa-paw', 'fa-paypal', 'fa-pencil', 'fa-pencil-square', 'fa-pencil-square-o',
+                'fa-percent', 'fa-phone', 'fa-phone-square', 'fa-photo', 'fa-picture-o',
+                'fa-pie-chart', 'fa-pied-piper', 'fa-pied-piper-alt', 'fa-pinterest', 'fa-pinterest-p',
+                'fa-pinterest-square', 'fa-plane', 'fa-play', 'fa-play-circle', 'fa-play-circle-o',
+                'fa-plug', 'fa-plus', 'fa-plus-circle', 'fa-plus-square', 'fa-plus-square-o',
+                'fa-podcast', 'fa-power-off', 'fa-print', 'fa-product-hunt', 'fa-puzzle-piece',
+                'fa-qq', 'fa-qrcode', 'fa-question', 'fa-question-circle', 'fa-question-circle-o',
+                'fa-quora', 'fa-quote-left', 'fa-quote-right', 'fa-ra', 'fa-random',
+                'fa-ravelry', 'fa-rebel', 'fa-recycle', 'fa-reddit', 'fa-reddit-alien',
+                'fa-reddit-square', 'fa-refresh', 'fa-registered', 'fa-remove', 'fa-renren',
+                'fa-reorder', 'fa-repeat', 'fa-reply', 'fa-reply-all', 'fa-resistance',
+                'fa-retweet', 'fa-rmb', 'fa-road', 'fa-rocket', 'fa-rotate-left',
+                'fa-rotate-right', 'fa-rouble', 'fa-rss', 'fa-rss-square', 'fa-rub',
+                'fa-ruble', 'fa-rupee', 'fa-safari', 'fa-save', 'fa-scissors',
+                'fa-scribd', 'fa-search', 'fa-search-minus', 'fa-search-plus', 'fa-sellsy',
+                'fa-send', 'fa-send-o', 'fa-server', 'fa-share', 'fa-share-alt',
+                'fa-share-alt-square', 'fa-share-square', 'fa-share-square-o', 'fa-shekel', 'fa-sheqel',
+                'fa-shield', 'fa-ship', 'fa-shirtsinbulk', 'fa-shopping-bag', 'fa-shopping-basket',
+                'fa-shopping-cart', 'fa-shower', 'fa-sign-in', 'fa-sign-language', 'fa-sign-out',
+                'fa-signal', 'fa-signing', 'fa-simplybuilt', 'fa-sitemap', 'fa-skyatlas',
+                'fa-skype', 'fa-slack', 'fa-sliders', 'fa-slideshare', 'fa-smile-o',
+                'fa-snapchat', 'fa-snapchat-ghost', 'fa-snapchat-square', 'fa-snowflake-o', 'fa-soccer-ball-o',
+                'fa-sort', 'fa-sort-alpha-asc', 'fa-sort-alpha-desc', 'fa-sort-amount-asc', 'fa-sort-amount-desc',
+                'fa-sort-asc', 'fa-sort-desc', 'fa-sort-down', 'fa-sort-numeric-asc', 'fa-sort-numeric-desc',
+                'fa-sort-up', 'fa-soundcloud', 'fa-space-shuttle', 'fa-spinner', 'fa-spoon',
+                'fa-spotify', 'fa-square', 'fa-square-o', 'fa-stack-exchange', 'fa-stack-overflow',
+                'fa-star', 'fa-star-half', 'fa-star-half-empty', 'fa-star-half-full', 'fa-star-half-o',
+                'fa-star-o', 'fa-steam', 'fa-steam-square', 'fa-step-backward', 'fa-step-forward',
+                'fa-stethoscope', 'fa-sticky-note', 'fa-sticky-note-o', 'fa-stop', 'fa-stop-circle',
+                'fa-stop-circle-o', 'fa-street-view', 'fa-strikethrough', 'fa-stumbleupon', 'fa-stumbleupon-circle',
+                'fa-subscript', 'fa-subway', 'fa-suitcase', 'fa-sun-o', 'fa-superpowers',
+                'fa-superscript', 'fa-support', 'fa-table', 'fa-tablet', 'fa-tachometer',
+                'fa-tag', 'fa-tags', 'fa-tasks', 'fa-taxi', 'fa-telegram',
+                'fa-television', 'fa-tencent-weibo', 'fa-terminal', 'fa-text-height', 'fa-text-width',
+                'fa-th', 'fa-th-large', 'fa-th-list', 'fa-themeisle', 'fa-thermometer',
+                'fa-thermometer-0', 'fa-thermometer-1', 'fa-thermometer-2', 'fa-thermometer-3', 'fa-thermometer-4',
+                'fa-thermometer-empty', 'fa-thermometer-full', 'fa-thermometer-half', 'fa-thermometer-quarter', 'fa-thermometer-three-quarters',
+                'fa-thumb-tack', 'fa-thumbs-down', 'fa-thumbs-o-down', 'fa-thumbs-o-up', 'fa-thumbs-up',
+                'fa-ticket', 'fa-times', 'fa-times-circle', 'fa-times-circle-o', 'fa-times-rectangle',
+                'fa-times-rectangle-o', 'fa-tint', 'fa-toggle-down', 'fa-toggle-left', 'fa-toggle-off',
+                'fa-toggle-on', 'fa-toggle-right', 'fa-toggle-up', 'fa-trademark', 'fa-train',
+                'fa-transgender', 'fa-transgender-alt', 'fa-trash', 'fa-trash-o', 'fa-tree',
+                'fa-trello', 'fa-tripadvisor', 'fa-trophy', 'fa-truck', 'fa-try',
+                'fa-tty', 'fa-tumblr', 'fa-tumblr-square', 'fa-turkish-lira', 'fa-tv',
+                'fa-twitch', 'fa-twitter', 'fa-twitter-square', 'fa-umbrella', 'fa-underline',
+                'fa-undo', 'fa-universal-access', 'fa-university', 'fa-unlink', 'fa-unlock',
+                'fa-unlock-alt', 'fa-unsorted', 'fa-upload', 'fa-usb', 'fa-usd',
+                'fa-user', 'fa-user-circle', 'fa-user-circle-o', 'fa-user-md', 'fa-user-o',
+                'fa-user-plus', 'fa-user-secret', 'fa-user-times', 'fa-users', 'fa-vcard',
+                'fa-vcard-o', 'fa-venus', 'fa-venus-double', 'fa-venus-mars', 'fa-viacoin',
+                'fa-viadeo', 'fa-viadeo-square', 'fa-video-camera', 'fa-vimeo', 'fa-vimeo-square',
+                'fa-vine', 'fa-vk', 'fa-volume-control-phone', 'fa-volume-down', 'fa-volume-off',
+                'fa-volume-up', 'fa-warning', 'fa-wechat', 'fa-weibo', 'fa-weixin',
+                'fa-whatsapp', 'fa-wheelchair', 'fa-wheelchair-alt', 'fa-wifi', 'fa-wikipedia-w',
+                'fa-window-close', 'fa-window-close-o', 'fa-window-maximize', 'fa-window-minimize', 'fa-window-restore',
+                'fa-windows', 'fa-won', 'fa-wordpress', 'fa-wpbeginner', 'fa-wpexplorer',
+                'fa-wpforms', 'fa-wrench', 'fa-xing', 'fa-xing-square', 'fa-y-combinator',
+                'fa-y-combinator-square', 'fa-yahoo', 'fa-yc', 'fa-yc-square', 'fa-yelp',
+                'fa-yen', 'fa-yoast', 'fa-youtube', 'fa-youtube-play', 'fa-youtube-square'
+            ];
+            return faIcons;
+        }
+
+        // Función para obtener nombres de iconos de Ionicons
+        function getIoniconNames() {
+            // Lista de iconos comunes de Ionicons (puedes ampliarla)
+            const ionIcons = [
+                'ion-alert', 'ion-alert-circled', 'ion-android-add', 'ion-android-add-circle',
+                'ion-android-alarm-clock', 'ion-android-alert', 'ion-android-apps', 'ion-android-archive',
+                'ion-android-arrow-back', 'ion-android-arrow-down', 'ion-android-arrow-dropdown',
+                'ion-android-arrow-dropdown-circle', 'ion-android-arrow-dropleft', 'ion-android-arrow-dropleft-circle',
+                'ion-android-arrow-dropright', 'ion-android-arrow-dropright-circle', 'ion-android-arrow-dropup',
+                'ion-android-arrow-dropup-circle', 'ion-android-arrow-forward', 'ion-android-arrow-up',
+                'ion-android-attach', 'ion-android-bar', 'ion-android-bicycle', 'ion-android-boat',
+                'ion-android-bookmark', 'ion-android-bulb', 'ion-android-bus', 'ion-android-calendar',
+                'ion-android-call', 'ion-android-camera', 'ion-android-cancel', 'ion-android-car',
+                'ion-android-cart', 'ion-android-chat', 'ion-android-checkbox', 'ion-android-checkbox-blank',
+                'ion-android-checkbox-outline', 'ion-android-checkbox-outline-blank', 'ion-android-checkmark-circle',
+                'ion-android-clipboard', 'ion-android-close', 'ion-android-cloud', 'ion-android-cloud-circle',
+                'ion-android-cloud-done', 'ion-android-cloud-outline', 'ion-android-color-palette',
+                'ion-android-compass', 'ion-android-contact', 'ion-android-contacts', 'ion-android-contract',
+                'ion-android-create', 'ion-android-delete', 'ion-android-desktop', 'ion-android-document',
+                'ion-android-done', 'ion-android-done-all', 'ion-android-download', 'ion-android-drafts',
+                'ion-android-exit', 'ion-android-expand', 'ion-android-favorite', 'ion-android-favorite-outline',
+                'ion-android-film', 'ion-android-folder', 'ion-android-folder-open', 'ion-android-funnel',
+                'ion-android-globe', 'ion-android-hand', 'ion-android-hangout', 'ion-android-happy',
+                'ion-android-home', 'ion-android-image', 'ion-android-laptop', 'ion-android-list',
+                'ion-android-locate', 'ion-android-lock', 'ion-android-mail', 'ion-android-map',
+                'ion-android-menu', 'ion-android-microphone', 'ion-android-microphone-off', 'ion-android-more-horizontal',
+                'ion-android-more-vertical', 'ion-android-navigate', 'ion-android-notifications', 'ion-android-notifications-none',
+                'ion-android-notifications-off', 'ion-android-open', 'ion-android-options', 'ion-android-people',
+                'ion-android-person', 'ion-android-person-add', 'ion-android-phone-landscape', 'ion-android-phone-portrait',
+                'ion-android-pin', 'ion-android-plane', 'ion-android-playstore', 'ion-android-print',
+                'ion-android-radio-button-off', 'ion-android-radio-button-on', 'ion-android-refresh', 'ion-android-remove',
+                'ion-android-remove-circle', 'ion-android-restaurant', 'ion-android-sad', 'ion-android-search',
+                'ion-android-send', 'ion-android-settings', 'ion-android-share', 'ion-android-share-alt',
+                'ion-android-star', 'ion-android-star-half', 'ion-android-star-outline', 'ion-android-stopwatch',
+                'ion-android-subway', 'ion-android-sunny', 'ion-android-sync', 'ion-android-textsms',
+                'ion-android-time', 'ion-android-train', 'ion-android-unlock', 'ion-android-upload',
+                'ion-android-volume-down', 'ion-android-volume-mute', 'ion-android-volume-off', 'ion-android-volume-up',
+                'ion-android-walk', 'ion-android-warning', 'ion-android-watch', 'ion-android-wifi',
+                'ion-aperture', 'ion-archive', 'ion-arrow-down-a', 'ion-arrow-down-b', 'ion-arrow-down-c',
+                'ion-arrow-expand', 'ion-arrow-graph-down-left', 'ion-arrow-graph-down-right', 'ion-arrow-graph-up-left',
+                'ion-arrow-graph-up-right', 'ion-arrow-left-a', 'ion-arrow-left-b', 'ion-arrow-left-c',
+                'ion-arrow-move', 'ion-arrow-resize', 'ion-arrow-return-left', 'ion-arrow-return-right',
+                'ion-arrow-right-a', 'ion-arrow-right-b', 'ion-arrow-right-c', 'ion-arrow-shrink',
+                'ion-arrow-swap', 'ion-arrow-up-a', 'ion-arrow-up-b', 'ion-arrow-up-c',
+                'ion-asterisk', 'ion-at', 'ion-backspace', 'ion-backspace-outline', 'ion-bag',
+                'ion-battery-charging', 'ion-battery-empty', 'ion-battery-full', 'ion-battery-half',
+                'ion-battery-low', 'ion-beaker', 'ion-beer', 'ion-bluetooth', 'ion-bonfire',
+                'ion-bookmark', 'ion-bowtie', 'ion-briefcase', 'ion-bug', 'ion-calculator',
+                'ion-calendar', 'ion-camera', 'ion-card', 'ion-cash', 'ion-chatbox',
+                'ion-chatbox-working', 'ion-chatboxes', 'ion-chatbubble', 'ion-chatbubble-working', 'ion-chatbubbles',
+                'ion-checkmark', 'ion-checkmark-circled', 'ion-checkmark-round', 'ion-chevron-down', 'ion-chevron-left',
+                'ion-chevron-right', 'ion-chevron-up', 'ion-clipboard', 'ion-clock', 'ion-close',
+                'ion-close-circled', 'ion-close-round', 'ion-closed-captioning', 'ion-cloud', 'ion-code',
+                'ion-code-download', 'ion-code-working', 'ion-coffee', 'ion-compass', 'ion-compose',
+                'ion-connection-bars', 'ion-contrast', 'ion-crop', 'ion-cube', 'ion-disc',
+                'ion-document', 'ion-document-text', 'ion-drag', 'ion-earth', 'ion-easel',
+                'ion-edit', 'ion-egg', 'ion-eject', 'ion-email', 'ion-email-unread',
+                'ion-erlenmeyer-flask', 'ion-erlenmeyer-flask-bubbles', 'ion-eye', 'ion-eye-disabled', 'ion-female',
+                'ion-filing', 'ion-film-marker', 'ion-fireball', 'ion-flag', 'ion-flame',
+                'ion-flash', 'ion-flash-off', 'ion-folder', 'ion-fork', 'ion-fork-repo',
+                'ion-forward', 'ion-funnel', 'ion-gear-a', 'ion-gear-b', 'ion-grid',
+                'ion-hammer', 'ion-happy', 'ion-happy-outline', 'ion-headphone', 'ion-heart',
+                'ion-heart-broken', 'ion-help', 'ion-help-buoy', 'ion-help-circled', 'ion-home',
+                'ion-icecream', 'ion-image', 'ion-images', 'ion-information', 'ion-information-circled',
+                'ion-ionic', 'ion-ios-alarm', 'ion-ios-alarm-outline', 'ion-ios-albums', 'ion-ios-albums-outline',
+                'ion-ios-americanfootball', 'ion-ios-americanfootball-outline', 'ion-ios-analytics', 'ion-ios-analytics-outline', 'ion-ios-arrow-back',
+                'ion-ios-arrow-down', 'ion-ios-arrow-forward', 'ion-ios-arrow-left', 'ion-ios-arrow-right', 'ion-ios-arrow-thin-down',
+                'ion-ios-arrow-thin-left', 'ion-ios-arrow-thin-right', 'ion-ios-arrow-thin-up', 'ion-ios-arrow-up', 'ion-ios-at',
+                'ion-ios-at-outline', 'ion-ios-barcode', 'ion-ios-barcode-outline', 'ion-ios-baseball', 'ion-ios-baseball-outline',
+                'ion-ios-basketball', 'ion-ios-basketball-outline', 'ion-ios-bell', 'ion-ios-bell-outline', 'ion-ios-body',
+                'ion-ios-body-outline', 'ion-ios-bolt', 'ion-ios-bolt-outline', 'ion-ios-book', 'ion-ios-book-outline',
+                'ion-ios-bookmarks', 'ion-ios-bookmarks-outline', 'ion-ios-box', 'ion-ios-box-outline', 'ion-ios-briefcase',
+                'ion-ios-briefcase-outline', 'ion-ios-browsers', 'ion-ios-browsers-outline', 'ion-ios-calculator', 'ion-ios-calculator-outline',
+                'ion-ios-calendar', 'ion-ios-calendar-outline', 'ion-ios-camera', 'ion-ios-camera-outline', 'ion-ios-cart',
+                'ion-ios-cart-outline', 'ion-ios-chatboxes', 'ion-ios-chatboxes-outline', 'ion-ios-chatbubble', 'ion-ios-chatbubble-outline',
+                'ion-ios-checkmark', 'ion-ios-checkmark-empty', 'ion-ios-checkmark-outline', 'ion-ios-circle-filled', 'ion-ios-circle-outline',
+                'ion-ios-clock', 'ion-ios-clock-outline', 'ion-ios-close', 'ion-ios-close-empty', 'ion-ios-close-outline',
+                'ion-ios-cloud', 'ion-ios-cloud-download', 'ion-ios-cloud-download-outline', 'ion-ios-cloud-outline', 'ion-ios-cloud-upload',
+                'ion-ios-cloud-upload-outline', 'ion-ios-cloudy', 'ion-ios-cloudy-night', 'ion-ios-cloudy-night-outline', 'ion-ios-cloudy-outline',
+                'ion-ios-cog', 'ion-ios-cog-outline', 'ion-ios-color-filter', 'ion-ios-color-filter-outline', 'ion-ios-color-wand',
+                'ion-ios-color-wand-outline', 'ion-ios-compose', 'ion-ios-compose-outline', 'ion-ios-contact', 'ion-ios-contact-outline',
+                'ion-ios-copy', 'ion-ios-copy-outline', 'ion-ios-crop', 'ion-ios-crop-strong', 'ion-ios-download',
+                'ion-ios-download-outline', 'ion-ios-drag', 'ion-ios-email', 'ion-ios-email-outline', 'ion-ios-eye',
+                'ion-ios-eye-outline', 'ion-ios-fastforward', 'ion-ios-fastforward-outline', 'ion-ios-filing', 'ion-ios-filing-outline',
+                'ion-ios-film', 'ion-ios-film-outline', 'ion-ios-flag', 'ion-ios-flag-outline', 'ion-ios-flame',
+                'ion-ios-flame-outline', 'ion-ios-flask', 'ion-ios-flask-outline', 'ion-ios-flower', 'ion-ios-flower-outline',
+                'ion-ios-folder', 'ion-ios-folder-outline', 'ion-ios-football', 'ion-ios-football-outline', 'ion-ios-game-controller-a',
+                'ion-ios-game-controller-a-outline', 'ion-ios-game-controller-b', 'ion-ios-game-controller-b-outline', 'ion-ios-gear', 'ion-ios-gear-outline',
+                'ion-ios-glasses', 'ion-ios-glasses-outline', 'ion-ios-grid-view', 'ion-ios-grid-view-outline', 'ion-ios-heart',
+                'ion-ios-heart-outline', 'ion-ios-help', 'ion-ios-help-empty', 'ion-ios-help-outline', 'ion-ios-home',
+                'ion-ios-home-outline', 'ion-ios-infinite', 'ion-ios-infinite-outline', 'ion-ios-information', 'ion-ios-information-empty',
+                'ion-ios-information-outline', 'ion-ios-ionic-outline', 'ion-ios-keypad', 'ion-ios-keypad-outline', 'ion-ios-lightbulb',
+                'ion-ios-lightbulb-outline', 'ion-ios-list', 'ion-ios-list-outline', 'ion-ios-location', 'ion-ios-location-outline',
+                'ion-ios-locked', 'ion-ios-locked-outline', 'ion-ios-loop', 'ion-ios-loop-outline', 'ion-ios-medical',
+                'ion-ios-medical-outline', 'ion-ios-medkit', 'ion-ios-medkit-outline', 'ion-ios-mic', 'ion-ios-mic-off',
+                'ion-ios-mic-outline', 'ion-ios-minus', 'ion-ios-minus-empty', 'ion-ios-minus-outline', 'ion-ios-monitor',
+                'ion-ios-monitor-outline', 'ion-ios-moon', 'ion-ios-moon-outline', 'ion-ios-more', 'ion-ios-more-outline',
+                'ion-ios-musical-note', 'ion-ios-musical-notes', 'ion-ios-navigate', 'ion-ios-navigate-outline', 'ion-ios-no-smoking',
+                'ion-ios-no-smoking-outline', 'ion-ios-nuclear', 'ion-ios-nuclear-outline', 'ion-ios-outlet', 'ion-ios-outlet-outline',
+                'ion-ios-paper', 'ion-ios-paper-outline', 'ion-ios-paperplane', 'ion-ios-paperplane-outline', 'ion-ios-partlysunny',
+                'ion-ios-partlysunny-outline', 'ion-ios-pause', 'ion-ios-pause-outline', 'ion-ios-paw', 'ion-ios-paw-outline',
+                'ion-ios-people', 'ion-ios-people-outline', 'ion-ios-person', 'ion-ios-person-outline', 'ion-ios-personadd',
+                'ion-ios-personadd-outline', 'ion-ios-photos', 'ion-ios-photos-outline', 'ion-ios-pie', 'ion-ios-pie-outline',
+                'ion-ios-pint', 'ion-ios-pint-outline', 'ion-ios-play', 'ion-ios-play-outline', 'ion-ios-plus',
+                'ion-ios-plus-empty', 'ion-ios-plus-outline', 'ion-ios-pricetag', 'ion-ios-pricetag-outline', 'ion-ios-pricetags',
+                'ion-ios-pricetags-outline', 'ion-ios-printer', 'ion-ios-printer-outline', 'ion-ios-pulse', 'ion-ios-pulse-outline',
+                'ion-ios-rainy', 'ion-ios-rainy-outline', 'ion-ios-recording', 'ion-ios-recording-outline', 'ion-ios-redo',
+                'ion-ios-redo-outline', 'ion-ios-refresh', 'ion-ios-refresh-empty', 'ion-ios-refresh-outline', 'ion-ios-reload',
+                'ion-ios-reverse-camera', 'ion-ios-reverse-camera-outline', 'ion-ios-rewind', 'ion-ios-rewind-outline', 'ion-ios-rose',
+                'ion-ios-rose-outline', 'ion-ios-search', 'ion-ios-search-strong', 'ion-ios-settings', 'ion-ios-settings-strong',
+                'ion-ios-shuffle', 'ion-ios-shuffle-outline', 'ion-ios-skipbackward', 'ion-ios-skipbackward-outline', 'ion-ios-skipforward',
+                'ion-ios-skipforward-outline', 'ion-ios-snowy', 'ion-ios-speedometer', 'ion-ios-speedometer-outline', 'ion-ios-star',
+                'ion-ios-star-half', 'ion-ios-star-outline', 'ion-ios-stats', 'ion-ios-stats-outline', 'ion-ios-stopwatch',
+                'ion-ios-stopwatch-outline', 'ion-ios-sunny', 'ion-ios-sunny-outline', 'ion-ios-telephone', 'ion-ios-telephone-outline',
+                'ion-ios-tennisball', 'ion-ios-tennisball-outline', 'ion-ios-thunderstorm', 'ion-ios-thunderstorm-outline', 'ion-ios-time',
+                'ion-ios-time-outline', 'ion-ios-timer', 'ion-ios-timer-outline', 'ion-ios-toggle', 'ion-ios-toggle-outline',
+                'ion-ios-trash', 'ion-ios-trash-outline', 'ion-ios-undo', 'ion-ios-undo-outline', 'ion-ios-unlocked',
+                'ion-ios-unlocked-outline', 'ion-ios-upload', 'ion-ios-upload-outline', 'ion-ios-videocam', 'ion-ios-videocam-outline',
+                'ion-ios-volume-high', 'ion-ios-volume-low', 'ion-ios-wineglass', 'ion-ios-wineglass-outline', 'ion-ios-world',
+                'ion-ios-world-outline', 'ion-ipad', 'ion-iphone', 'ion-ipod', 'ion-jet',
+                'ion-key', 'ion-knife', 'ion-laptop', 'ion-leaf', 'ion-levels',
+                'ion-lightbulb', 'ion-link', 'ion-load-a', 'ion-load-b', 'ion-load-c',
+                'ion-load-d', 'ion-location', 'ion-lock-combination', 'ion-locked', 'ion-log-in',
+                'ion-log-out', 'ion-loop', 'ion-magnet', 'ion-male', 'ion-man',
+                'ion-map', 'ion-medkit', 'ion-merge', 'ion-mic-a', 'ion-mic-b',
+                'ion-mic-c', 'ion-minus', 'ion-minus-circled', 'ion-minus-round', 'ion-model-s',
+                'ion-monitor', 'ion-more', 'ion-mouse', 'ion-music-note', 'ion-navicon',
+                'ion-navicon-round', 'ion-navigate', 'ion-network', 'ion-no-smoking', 'ion-nuclear',
+                'ion-outlet', 'ion-paintbrush', 'ion-paintbucket', 'ion-paper-airplane', 'ion-paperclip',
+                'ion-pause', 'ion-person', 'ion-person-add', 'ion-person-stalker', 'ion-pie-graph',
+                'ion-pin', 'ion-pinpoint', 'ion-pizza', 'ion-plane', 'ion-planet',
+                'ion-play', 'ion-playstation', 'ion-plus', 'ion-plus-circled', 'ion-plus-round',
+                'ion-podium', 'ion-pound', 'ion-power', 'ion-pricetag', 'ion-pricetags',
+                'ion-printer', 'ion-pull-request', 'ion-qr-scanner', 'ion-quote', 'ion-radio-waves',
+                'ion-record', 'ion-refresh', 'ion-reply', 'ion-reply-all', 'ion-ribbon-a',
+                'ion-ribbon-b', 'ion-sad', 'ion-sad-outline', 'ion-scissors', 'ion-search',
+                'ion-settings', 'ion-share', 'ion-shuffle', 'ion-skip-backward', 'ion-skip-forward',
+                'ion-social-android', 'ion-social-android-outline', 'ion-social-angular', 'ion-social-angular-outline', 'ion-social-apple',
+                'ion-social-apple-outline', 'ion-social-bitcoin', 'ion-social-bitcoin-outline', 'ion-social-buffer', 'ion-social-buffer-outline',
+                'ion-social-chrome', 'ion-social-chrome-outline', 'ion-social-codepen', 'ion-social-codepen-outline', 'ion-social-css3',
+                'ion-social-css3-outline', 'ion-social-designernews', 'ion-social-designernews-outline', 'ion-social-dribbble', 'ion-social-dribbble-outline',
+                'ion-social-dropbox', 'ion-social-dropbox-outline', 'ion-social-euro', 'ion-social-euro-outline', 'ion-social-facebook',
+                'ion-social-facebook-outline', 'ion-social-foursquare', 'ion-social-foursquare-outline', 'ion-social-freebsd-devil', 'ion-social-github',
+                'ion-social-github-outline', 'ion-social-google', 'ion-social-google-outline', 'ion-social-googleplus', 'ion-social-googleplus-outline',
+                'ion-social-hackernews', 'ion-social-hackernews-outline', 'ion-social-html5', 'ion-social-html5-outline', 'ion-social-instagram',
+                'ion-social-instagram-outline', 'ion-social-javascript', 'ion-social-javascript-outline', 'ion-social-linkedin', 'ion-social-linkedin-outline',
+                'ion-social-markdown', 'ion-social-nodejs', 'ion-social-octocat', 'ion-social-pinterest', 'ion-social-pinterest-outline',
+                'ion-social-python', 'ion-social-reddit', 'ion-social-reddit-outline', 'ion-social-rss', 'ion-social-rss-outline',
+                'ion-social-sass', 'ion-social-skype', 'ion-social-skype-outline', 'ion-social-snapchat', 'ion-social-snapchat-outline',
+                'ion-social-tumblr', 'ion-social-tumblr-outline', 'ion-social-tux', 'ion-social-twitch', 'ion-social-twitch-outline',
+                'ion-social-twitter', 'ion-social-twitter-outline', 'ion-social-usd', 'ion-social-usd-outline', 'ion-social-vimeo',
+                'ion-social-vimeo-outline', 'ion-social-whatsapp', 'ion-social-whatsapp-outline', 'ion-social-windows', 'ion-social-windows-outline',
+                'ion-social-wordpress', 'ion-social-wordpress-outline', 'ion-social-yahoo', 'ion-social-yahoo-outline', 'ion-social-yen',
+                'ion-social-yen-outline', 'ion-social-youtube', 'ion-social-youtube-outline', 'ion-soup-can', 'ion-soup-can-outline',
+                'ion-speakerphone', 'ion-speedometer', 'ion-spoon', 'ion-star', 'ion-stats-bars',
+                'ion-steam', 'ion-stop', 'ion-thermometer', 'ion-thumbsdown', 'ion-thumbsup',
+                'ion-toggle', 'ion-toggle-filled', 'ion-transgender', 'ion-trash-a', 'ion-trash-b',
+                'ion-trophy', 'ion-tshirt', 'ion-tshirt-outline', 'ion-umbrella', 'ion-university',
+                'ion-unlocked', 'ion-upload', 'ion-usb', 'ion-videocamera', 'ion-volume-high',
+                'ion-volume-low', 'ion-volume-medium', 'ion-volume-mute', 'ion-wand', 'ion-waterdrop',
+                'ion-wifi', 'ion-wineglass', 'ion-woman', 'ion-wrench', 'ion-xbox'
+            ];
+            return ionIcons;
+        }
+
+        // Función para obtener nombres de iconos de Glyphicons
+        function getGlyphiconsNames() {
+            // Lista de iconos comunes de Glyphicons (puedes ampliarla)
+            const glyphIcons = [
+                'glyphicon-asterisk', 'glyphicon-plus', 'glyphicon-euro', 'glyphicon-minus', 'glyphicon-cloud',
+                'glyphicon-envelope', 'glyphicon-pencil', 'glyphicon-glass', 'glyphicon-music', 'glyphicon-search',
+                'glyphicon-heart', 'glyphicon-star', 'glyphicon-star-empty', 'glyphicon-user', 'glyphicon-film',
+                'glyphicon-th-large', 'glyphicon-th', 'glyphicon-th-list', 'glyphicon-ok', 'glyphicon-remove',
+                'glyphicon-zoom-in', 'glyphicon-zoom-out', 'glyphicon-off', 'glyphicon-signal', 'glyphicon-cog',
+                'glyphicon-trash', 'glyphicon-home', 'glyphicon-file', 'glyphicon-time', 'glyphicon-road',
+                'glyphicon-download-alt', 'glyphicon-download', 'glyphicon-upload', 'glyphicon-inbox', 'glyphicon-play-circle',
+                'glyphicon-repeat', 'glyphicon-refresh', 'glyphicon-list-alt', 'glyphicon-lock', 'glyphicon-flag',
+                'glyphicon-headphones', 'glyphicon-volume-off', 'glyphicon-volume-down', 'glyphicon-volume-up', 'glyphicon-qrcode',
+                'glyphicon-barcode', 'glyphicon-tag', 'glyphicon-tags', 'glyphicon-book', 'glyphicon-bookmark',
+                'glyphicon-print', 'glyphicon-camera', 'glyphicon-font', 'glyphicon-bold', 'glyphicon-italic',
+                'glyphicon-text-height', 'glyphicon-text-width', 'glyphicon-align-left', 'glyphicon-align-center', 'glyphicon-align-right',
+                'glyphicon-align-justify', 'glyphicon-list', 'glyphicon-indent-left', 'glyphicon-indent-right', 'glyphicon-facetime-video',
+                'glyphicon-picture', 'glyphicon-map-marker', 'glyphicon-adjust', 'glyphicon-tint', 'glyphicon-edit',
+                'glyphicon-share', 'glyphicon-check', 'glyphicon-move', 'glyphicon-step-backward', 'glyphicon-fast-backward',
+                'glyphicon-backward', 'glyphicon-play', 'glyphicon-pause', 'glyphicon-stop', 'glyphicon-forward',
+                'glyphicon-fast-forward', 'glyphicon-step-forward', 'glyphicon-eject', 'glyphicon-chevron-left', 'glyphicon-chevron-right',
+                'glyphicon-plus-sign', 'glyphicon-minus-sign', 'glyphicon-remove-sign', 'glyphicon-ok-sign', 'glyphicon-question-sign',
+                'glyphicon-info-sign', 'glyphicon-screenshot', 'glyphicon-remove-circle', 'glyphicon-ok-circle', 'glyphicon-ban-circle',
+                'glyphicon-arrow-left', 'glyphicon-arrow-right', 'glyphicon-arrow-up', 'glyphicon-arrow-down', 'glyphicon-share-alt',
+                'glyphicon-resize-full', 'glyphicon-resize-small', 'glyphicon-exclamation-sign', 'glyphicon-gift', 'glyphicon-leaf',
+                'glyphicon-fire', 'glyphicon-eye-open', 'glyphicon-eye-close', 'glyphicon-warning-sign', 'glyphicon-plane',
+                'glyphicon-calendar', 'glyphicon-random', 'glyphicon-comment', 'glyphicon-magnet', 'glyphicon-chevron-up',
+                'glyphicon-chevron-down', 'glyphicon-retweet', 'glyphicon-shopping-cart', 'glyphicon-folder-close', 'glyphicon-folder-open',
+                'glyphicon-resize-vertical', 'glyphicon-resize-horizontal', 'glyphicon-hdd', 'glyphicon-bullhorn', 'glyphicon-bell',
+                'glyphicon-certificate', 'glyphicon-thumbs-up', 'glyphicon-thumbs-down', 'glyphicon-hand-right', 'glyphicon-hand-left',
+                'glyphicon-hand-up', 'glyphicon-hand-down', 'glyphicon-circle-arrow-right', 'glyphicon-circle-arrow-left', 'glyphicon-circle-arrow-up',
+                'glyphicon-circle-arrow-down', 'glyphicon-globe', 'glyphicon-wrench', 'glyphicon-tasks', 'glyphicon-filter',
+                'glyphicon-briefcase', 'glyphicon-fullscreen', 'glyphicon-dashboard', 'glyphicon-paperclip', 'glyphicon-heart-empty',
+                'glyphicon-link', 'glyphicon-phone', 'glyphicon-pushpin', 'glyphicon-usd', 'glyphicon-gbp',
+                'glyphicon-sort', 'glyphicon-sort-by-alphabet', 'glyphicon-sort-by-alphabet-alt', 'glyphicon-sort-by-order', 'glyphicon-sort-by-order-alt',
+                'glyphicon-sort-by-attributes', 'glyphicon-sort-by-attributes-alt', 'glyphicon-unchecked', 'glyphicon-expand', 'glyphicon-collapse-down',
+                'glyphicon-collapse-up', 'glyphicon-log-in', 'glyphicon-flash', 'glyphicon-log-out', 'glyphicon-new-window',
+                'glyphicon-record', 'glyphicon-save', 'glyphicon-open', 'glyphicon-saved', 'glyphicon-import',
+                'glyphicon-export', 'glyphicon-send', 'glyphicon-floppy-disk', 'glyphicon-floppy-saved', 'glyphicon-floppy-remove',
+                'glyphicon-floppy-save', 'glyphicon-floppy-open', 'glyphicon-credit-card', 'glyphicon-transfer', 'glyphicon-cutlery',
+                'glyphicon-header', 'glyphicon-compressed', 'glyphicon-earphone', 'glyphicon-phone-alt', 'glyphicon-tower',
+                'glyphicon-stats', 'glyphicon-sd-video', 'glyphicon-hd-video', 'glyphicon-subtitles', 'glyphicon-sound-stereo',
+                'glyphicon-sound-dolby', 'glyphicon-sound-5-1', 'glyphicon-sound-6-1', 'glyphicon-sound-7-1', 'glyphicon-copyright-mark',
+                'glyphicon-registration-mark', 'glyphicon-cloud-download', 'glyphicon-cloud-upload', 'glyphicon-tree-conifer', 'glyphicon-tree-deciduous',
+                'glyphicon-cd', 'glyphicon-save-file', 'glyphicon-open-file', 'glyphicon-level-up', 'glyphicon-copy',
+                'glyphicon-paste', 'glyphicon-alert', 'glyphicon-equalizer', 'glyphicon-king', 'glyphicon-queen',
+                'glyphicon-pawn', 'glyphiconbishop', 'glyphicon-knight', 'glyphicon-baby-formula', 'glyphicon-tent',
+                'glyphicon-blackboard', 'glyphicon-bed', 'glyphicon-apple', 'glyphicon-erase', 'glyphicon-hourglass',
+                'glyphicon-lamp', 'glyphicon-duplicate', 'glyphicon-piggy-bank', 'glyphicon-scissors', 'glyphicon-bitcoin',
+                'glyphicon-btc', 'glyphicon-xbt', 'glyphicon-yen', 'glyphicon-jpy', 'glyphicon-ruble',
+                'glyphicon-rub', 'glyphicon-scale', 'glyphicon-ice-lolly', 'glyphicon-ice-lolly-tasted', 'glyphicon-education',
+                'glyphicon-option-horizontal', 'glyphicon-option-vertical', 'glyphicon-menu-hamburger', 'glyphicon-modal-window', 'glyphicon-oil',
+                'glyphicon-grain', 'glyphicon-sunglasses', 'glyphicon-text-size', 'glyphicon-text-color', 'glyphicon-text-background',
+                'glyphicon-object-align-top', 'glyphicon-object-align-bottom', 'glyphicon-object-align-horizontal', 'glyphicon-object-align-left', 'glyphicon-object-align-vertical',
+                'glyphicon-object-align-right', 'glyphicon-triangle-right', 'glyphicon-triangle-left', 'glyphicon-triangle-bottom', 'glyphicon-triangle-top',
+                'glyphicon-console', 'glyphicon-superscript', 'glyphicon-subscript', 'glyphicon-menu-left', 'glyphicon-menu-right',
+                'glyphicon-menu-down', 'glyphicon-menu-up'
+            ];
+            return glyphIcons;
+        }
+
+        // Función para obtener nombres de iconos de Icomoon
+        function getIcomoonNames() {
+            // Lista de iconos comunes de Icomoon (puedes ampliarla)
+            // Nota: Los nombres reales dependen del conjunto de iconos específico de Icomoon
+            const icomoonIcons = [
+                'icon-home', 'icon-home2', 'icon-home3', 'icon-office', 'icon-newspaper',
+                'icon-pencil', 'icon-pencil2', 'icon-quill', 'icon-pen', 'icon-blog',
+                'icon-eyedropper', 'icon-droplet', 'icon-paint-format', 'icon-image', 'icon-images',
+                'icon-camera', 'icon-headphones', 'icon-music', 'icon-play', 'icon-film',
+                'icon-video-camera', 'icon-dice', 'icon-pacman', 'icon-spades', 'icon-clubs',
+                'icon-diamonds', 'icon-pawn', 'icon-bishop', 'icon-knight', 'icon-star',
+                'icon-star-half', 'icon-star-empty', 'icon-heart', 'icon-heart-broken', 'icon-man',
+                'icon-woman', 'icon-man-woman', 'icon-happy', 'icon-happy2', 'icon-smile',
+                'icon-smile2', 'icon-tongue', 'icon-tongue2', 'icon-sad', 'icon-sad2',
+                'icon-wink', 'icon-wink2', 'icon-grin', 'icon-grin2', 'icon-cool',
+                'icon-cool2', 'icon-angry', 'icon-angry2', 'icon-evil', 'icon-evil2',
+                'icon-shocked', 'icon-shocked2', 'icon-baffled', 'icon-baffled2', 'icon-confused',
+                'icon-confused2', 'icon-neutral', 'icon-neutral2', 'icon-hipster', 'icon-hipster2',
+                'icon-wondering', 'icon-wondering2', 'icon-sleepy', 'icon-sleepy2', 'icon-frustrated',
+                'icon-frustrated2', 'icon-crying', 'icon-crying2', 'icon-point-up', 'icon-point-right',
+                'icon-point-down', 'icon-point-left', 'icon-warning', 'icon-notification', 'icon-question',
+                'icon-info', 'icon-info2', 'icon-blocked', 'icon-cancel-circle', 'icon-checkmark-circle',
+                'icon-checkmark-circle2', 'icon-spam', 'icon-google', 'icon-google-plus', 'icon-google-plus2',
+                'icon-google-plus3', 'icon-google-drive', 'icon-facebook', 'icon-facebook2', 'icon-facebook3',
+                'icon-instagram', 'icon-twitter', 'icon-twitter2', 'icon-twitter3', 'icon-feed',
+                'icon-feed2', 'icon-feed3', 'icon-youtube', 'icon-youtube2', 'icon-youtube3',
+                'icon-vimeo', 'icon-vimeo2', 'icon-vimeo3', 'icon-lanyrd', 'icon-flickr',
+                'icon-flickr2', 'icon-flickr3', 'icon-flickr4', 'icon-picassa', 'icon-picassa2',
+                'icon-dribbble', 'icon-dribbble2', 'icon-dribbble3', 'icon-forrst', 'icon-forrst2',
+                'icon-deviantart', 'icon-deviantart2', 'icon-steam', 'icon-steam2', 'icon-github',
+                'icon-github2', 'icon-github3', 'icon-github4', 'icon-github5', 'icon-wordpress',
+                'icon-wordpress2', 'icon-joomla', 'icon-blogger', 'icon-blogger2', 'icon-tumblr',
+                'icon-tumblr2', 'icon-yahoo', 'icon-tux', 'icon-apple', 'icon-finder',
+                'icon-android', 'icon-windows', 'icon-windows8', 'icon-soundcloud', 'icon-soundcloud2',
+                'icon-skype', 'icon-reddit', 'icon-linkedin', 'icon-linkedin2', 'icon-lastfm',
+                'icon-lastfm2', 'icon-delicious', 'icon-stumbleupon', 'icon-stumbleupon2', 'icon-stackoverflow',
+                'icon-pinterest', 'icon-pinterest2', 'icon-xing', 'icon-xing2', 'icon-flattr',
+                'icon-foursquare', 'icon-yelp', 'icon-paypal', 'icon-chrome', 'icon-firefox',
+                'icon-IE', 'icon-opera', 'icon-safari', 'icon-IcoMoon', 'icon-icoMoon2',
+                'icon-icoMoon3', 'icon-icoMoon4', 'icon-icoMoon5', 'icon-icoMoon6', 'icon-icoMoon7',
+                'icon-icoMoon8', 'icon-icoMoon9', 'icon-icoMoon10', 'icon-icoMoon11', 'icon-icoMoon12',
+                'icon-icoMoon13', 'icon-icoMoon14', 'icon-icoMoon15', 'icon-icoMoon16', 'icon-icoMoon17',
+                'icon-icoMoon18', 'icon-icoMoon19', 'icon-icoMoon20', 'icon-icoMoon21', 'icon-icoMoon22',
+                'icon-icoMoon23', 'icon-icoMoon24', 'icon-icoMoon25', 'icon-icoMoon26', 'icon-icoMoon27',
+                'icon-icoMoon28', 'icon-icoMoon29', 'icon-icoMoon30', 'icon-icoMoon31', 'icon-icoMoon32',
+                'icon-icoMoon33', 'icon-icoMoon34', 'icon-icoMoon35', 'icon-icoMoon36', 'icon-icoMoon37',
+                'icon-icoMoon38', 'icon-icoMoon39', 'icon-icoMoon40', 'icon-icoMoon41', 'icon-icoMoon42',
+                'icon-icoMoon43', 'icon-icoMoon44', 'icon-icoMoon45', 'icon-icoMoon46', 'icon-icoMoon47',
+                'icon-icoMoon48', 'icon-icoMoon49', 'icon-icoMoon50', 'icon-icoMoon51', 'icon-icoMoon52',
+                'icon-icoMoon53', 'icon-icoMoon54', 'icon-icoMoon55', 'icon-icoMoon56', 'icon-icoMoon57',
+                'icon-icoMoon58', 'icon-icoMoon59', 'icon-icoMoon60', 'icon-icoMoon61', 'icon-icoMoon62',
+                'icon-icoMoon63', 'icon-icoMoon64', 'icon-icoMoon65', 'icon-icoMoon66', 'icon-icoMoon67',
+                'icon-icoMoon68', 'icon-icoMoon69', 'icon-icoMoon70', 'icon-icoMoon71', 'icon-icoMoon72',
+                'icon-icoMoon73', 'icon-icoMoon74', 'icon-icoMoon75', 'icon-icoMoon76', 'icon-icoMoon77',
+                'icon-icoMoon78', 'icon-icoMoon79', 'icon-icoMoon80', 'icon-icoMoon81', 'icon-icoMoon82',
+                'icon-icoMoon83', 'icon-icoMoon84', 'icon-icoMoon85', 'icon-icoMoon86', 'icon-icoMoon87',
+                'icon-icoMoon88', 'icon-icoMoon89', 'icon-icoMoon90', 'icon-icoMoon91', 'icon-icoMoon92',
+                'icon-icoMoon93', 'icon-icoMoon94', 'icon-icoMoon95', 'icon-icoMoon96', 'icon-icoMoon97',
+                'icon-icoMoon98', 'icon-icoMoon99', 'icon-icoMoon100', 'icon-icoMoon101', 'icon-icoMoon102',
+                'icon-icoMoon103', 'icon-icoMoon104', 'icon-icoMoon105', 'icon-icoMoon106', 'icon-icoMoon107',
+                'icon-icoMoon108', 'icon-icoMoon109', 'icon-icoMoon110', 'icon-icoMoon111', 'icon-icoMoon112',
+                'icon-icoMoon113', 'icon-icoMoon114', 'icon-icoMoon115', 'icon-icoMoon116', 'icon-icoMoon117',
+                'icon-icoMoon118', 'icon-icoMoon119', 'icon-icoMoon120', 'icon-icoMoon121', 'icon-icoMoon122',
+                'icon-icoMoon123', 'icon-icoMoon124', 'icon-icoMoon125', 'icon-icoMoon126', 'icon-icoMoon127',
+                'icon-icoMoon128', 'icon-icoMoon129', 'icon-icoMoon130', 'icon-icoMoon131', 'icon-icoMoon132',
+                'icon-icoMoon133', 'icon-icoMoon134', 'icon-icoMoon135', 'icon-icoMoon136', 'icon-icoMoon137',
+                'icon-icoMoon138', 'icon-icoMoon139', 'icon-icoMoon140', 'icon-icoMoon141', 'icon-icoMoon142',
+                'icon-icoMoon143', 'icon-icoMoon144', 'icon-icoMoon145', 'icon-icoMoon146', 'icon-icoMoon147',
+                'icon-icoMoon148', 'icon-icoMoon149', 'icon-icoMoon150', 'icon-icoMoon151', 'icon-icoMoon152',
+                'icon-icoMoon153', 'icon-icoMoon154', 'icon-icoMoon155', 'icon-icoMoon156', 'icon-icoMoon157',
+                'icon-icoMoon158', 'icon-icoMoon159', 'icon-icoMoon160', 'icon-icoMoon161', 'icon-icoMoon162',
+                'icon-icoMoon163', 'icon-icoMoon164', 'icon-icoMoon165', 'icon-icoMoon166', 'icon-icoMoon167',
+                'icon-icoMoon168', 'icon-icoMoon169', 'icon-icoMoon170', 'icon-icoMoon171', 'icon-icoMoon172',
+                'icon-icoMoon173', 'icon-icoMoon174', 'icon-icoMoon175', 'icon-icoMoon176', 'icon-icoMoon177',
+                'icon-icoMoon178', 'icon-icoMoon179', 'icon-icoMoon180', 'icon-icoMoon181', 'icon-icoMoon182',
+                'icon-icoMoon183', 'icon-icoMoon184', 'icon-icoMoon185', 'icon-icoMoon186', 'icon-icoMoon187',
+                'icon-icoMoon188', 'icon-icoMoon189', 'icon-icoMoon190', 'icon-icoMoon191', 'icon-icoMoon192',
+                'icon-icoMoon193', 'icon-icoMoon194', 'icon-icoMoon195', 'icon-icoMoon196', 'icon-icoMoon197',
+                'icon-icoMoon198', 'icon-icoMoon199', 'icon-icoMoon200', 'icon-icoMoon201', 'icon-icoMoon202',
+                'icon-icoMoon203', 'icon-icoMoon204', 'icon-icoMoon205', 'icon-icoMoon206', 'icon-icoMoon207',
+                'icon-icoMoon208', 'icon-icoMoon209', 'icon-icoMoon210', 'icon-icoMoon211', 'icon-icoMoon212',
+                'icon-icoMoon213', 'icon-icoMoon214', 'icon-icoMoon215', 'icon-icoMoon216', 'icon-icoMoon217',
+                'icon-icoMoon218', 'icon-icoMoon219', 'icon-icoMoon220', 'icon-icoMoon221', 'icon-icoMoon222',
+                'icon-icoMoon223', 'icon-icoMoon224', 'icon-icoMoon225', 'icon-icoMoon226', 'icon-icoMoon227',
+                'icon-icoMoon228', 'icon-icoMoon229', 'icon-icoMoon230', 'icon-icoMoon231', 'icon-icoMoon232',
+                'icon-icoMoon233', 'icon-icoMoon234', 'icon-icoMoon235', 'icon-icoMoon236', 'icon-icoMoon237',
+                'icon-icoMoon238', 'icon-icoMoon239', 'icon-icoMoon240', 'icon-icoMoon241', 'icon-icoMoon242',
+                'icon-icoMoon243', 'icon-icoMoon244', 'icon-icoMoon245', 'icon-icoMoon246', 'icon-icoMoon247',
+                'icon-icoMoon248', 'icon-icoMoon249', 'icon-icoMoon250', 'icon-icoMoon251', 'icon-icoMoon252',
+                'icon-icoMoon253', 'icon-icoMoon254', 'icon-icoMoon255', 'icon-icoMoon256', 'icon-icoMoon257',
+                'icon-icoMoon258', 'icon-icoMoon259', 'icon-icoMoon260', 'icon-icoMoon261', 'icon-icoMoon262',
+                'icon-icoMoon263', 'icon-icoMoon264', 'icon-icoMoon265', 'icon-icoMoon266', 'icon-icoMoon267',
+                'icon-icoMoon268', 'icon-icoMoon269', 'icon-icoMoon270', 'icon-icoMoon271', 'icon-icoMoon272',
+                'icon-icoMoon273', 'icon-icoMoon274', 'icon-icoMoon275', 'icon-icoMoon276', 'icon-icoMoon277',
+                'icon-icoMoon278', 'icon-icoMoon279', 'icon-icoMoon280', 'icon-icoMoon281', 'icon-icoMoon282',
+                'icon-icoMoon283', 'icon-icoMoon284', 'icon-icoMoon285', 'icon-icoMoon286', 'icon-icoMoon287',
+                'icon-icoMoon288', 'icon-icoMoon289', 'icon-icoMoon290', 'icon-icoMoon291', 'icon-icoMoon292',
+                'icon-icoMoon293', 'icon-icoMoon294', 'icon-icoMoon295', 'icon-icoMoon296', 'icon-icoMoon297',
+                'icon-icoMoon298', 'icon-icoMoon299', 'icon-icoMoon300', 'icon-icoMoon301', 'icon-icoMoon302',
+                'icon-icoMoon303', 'icon-icoMoon304', 'icon-icoMoon305', 'icon-icoMoon306', 'icon-icoMoon307',
+                'icon-icoMoon308', 'icon-icoMoon309', 'icon-icoMoon310', 'icon-icoMoon311', 'icon-icoMoon312',
+                'icon-icoMoon313', 'icon-icoMoon314', 'icon-icoMoon315', 'icon-icoMoon316', 'icon-icoMoon317',
+                'icon-icoMoon318', 'icon-icoMoon319', 'icon-icoMoon320', 'icon-icoMoon321', 'icon-icoMoon322',
+                'icon-icoMoon323', 'icon-icoMoon324', 'icon-icoMoon325', 'icon-icoMoon326', 'icon-icoMoon327',
+                'icon-icoMoon328', 'icon-icoMoon329', 'icon-icoMoon330', 'icon-icoMoon331', 'icon-icoMoon332',
+                'icon-icoMoon333', 'icon-icoMoon334', 'icon-icoMoon335', 'icon-icoMoon336', 'icon-icoMoon337',
+                'icon-icoMoon338', 'icon-icoMoon339', 'icon-icoMoon340', 'icon-icoMoon341', 'icon-icoMoon342',
+                'icon-icoMoon343', 'icon-icoMoon344', 'icon-icoMoon345', 'icon-icoMoon346', 'icon-icoMoon347',
+                'icon-icoMoon348', 'icon-icoMoon349', 'icon-icoMoon350', 'icon-icoMoon351', 'icon-icoMoon352',
+                'icon-icoMoon353', 'icon-icoMoon354', 'icon-icoMoon355', 'icon-icoMoon356', 'icon-icoMoon357',
+                'icon-icoMoon358', 'icon-icoMoon359', 'icon-icoMoon360', 'icon-icoMoon361', 'icon-icoMoon362',
+                'icon-icoMoon363', 'icon-icoMoon364', 'icon-icoMoon365', 'icon-icoMoon366', 'icon-icoMoon367',
+                'icon-icoMoon368', 'icon-icoMoon369', 'icon-icoMoon370', 'icon-icoMoon371', 'icon-icoMoon372',
+                'icon-icoMoon373', 'icon-icoMoon374', 'icon-icoMoon375', 'icon-icoMoon376', 'icon-icoMoon377',
+                'icon-icoMoon378', 'icon-icoMoon379', 'icon-icoMoon380', 'icon-icoMoon381', 'icon-icoMoon382',
+                'icon-icoMoon383', 'icon-icoMoon384', 'icon-icoMoon385', 'icon-icoMoon386', 'icon-icoMoon387',
+                'icon-icoMoon388', 'icon-icoMoon389', 'icon-icoMoon390', 'icon-icoMoon391', 'icon-icoMoon392',
+                'icon-icoMoon393', 'icon-icoMoon394', 'icon-icoMoon395', 'icon-icoMoon396', 'icon-icoMoon397',
+                'icon-icoMoon398', 'icon-icoMoon399', 'icon-icoMoon400', 'icon-icoMoon401', 'icon-icoMoon402',
+                'icon-icoMoon403', 'icon-icoMoon404', 'icon-icoMoon405', 'icon-icoMoon406', 'icon-icoMoon407',
+                'icon-icoMoon408', 'icon-icoMoon409', 'icon-icoMoon410', 'icon-icoMoon411', 'icon-icoMoon412',
+                'icon-icoMoon413', 'icon-icoMoon414', 'icon-icoMoon415', 'icon-icoMoon416', 'icon-icoMoon417',
+                'icon-icoMoon418', 'icon-icoMoon419', 'icon-icoMoon420', 'icon-icoMoon421', 'icon-icoMoon422',
+                'icon-icoMoon423', 'icon-icoMoon424', 'icon-icoMoon425', 'icon-icoMoon426', 'icon-icoMoon427',
+                'icon-icoMoon428', 'icon-icoMoon429', 'icon-icoMoon430', 'icon-icoMoon431', 'icon-icoMoon432',
+                'icon-icoMoon433', 'icon-icoMoon434', 'icon-icoMoon435', 'icon-icoMoon436', 'icon-icoMoon437',
+                'icon-icoMoon438', 'icon-icoMoon439', 'icon-icoMoon440', 'icon-icoMoon441', 'icon-icoMoon442',
+                'icon-icoMoon443', 'icon-icoMoon444', 'icon-icoMoon445', 'icon-icoMoon446', 'icon-icoMoon447',
+                'icon-icoMoon448', 'icon-icoMoon449', 'icon-icoMoon450', 'icon-icoMoon451', 'icon-icoMoon452',
+                'icon-icoMoon453', 'icon-icoMoon454', 'icon-icoMoon455', 'icon-icoMoon456', 'icon-icoMoon457',
+                'icon-icoMoon458', 'icon-icoMoon459', 'icon-icoMoon460', 'icon-icoMoon461', 'icon-icoMoon462',
+                'icon-icoMoon463', 'icon-icoMoon464', 'icon-icoMoon465', 'icon-icoMoon466', 'icon-icoMoon467',
+                'icon-icoMoon468', 'icon-icoMoon469', 'icon-icoMoon470', 'icon-icoMoon471', 'icon-icoMoon472',
+                'icon-icoMoon473', 'icon-icoMoon474', 'icon-icoMoon475', 'icon-icoMoon476', 'icon-icoMoon477',
+                'icon-icoMoon478', 'icon-icoMoon479', 'icon-icoMoon480', 'icon-icoMoon481', 'icon-icoMoon482',
+                'icon-icoMoon483', 'icon-icoMoon484', 'icon-icoMoon485', 'icon-icoMoon486', 'icon-icoMoon487',
+                'icon-icoMoon488', 'icon-icoMoon489', 'icon-icoMoon490', 'icon-icoMoon491', 'icon-icoMoon492',
+                'icon-icoMoon493', 'icon-icoMoon494', 'icon-icoMoon495', 'icon-icoMoon496', 'icon-icoMoon497',
+                'icon-icoMoon498', 'icon-icoMoon499', 'icon-icoMoon500', 'icon-icoMoon501', 'icon-icoMoon502',
+                'icon-icoMoon503', 'icon-icoMoon504', 'icon-icoMoon505', 'icon-icoMoon506', 'icon-icoMoon507',
+                'icon-icoMoon508', 'icon-icoMoon509', 'icon-icoMoon510', 'icon-icoMoon511', 'icon-icoMoon512',
+                'icon-icoMoon513', 'icon-icoMoon514', 'icon-icoMoon515', 'icon-icoMoon516', 'icon-icoMoon517',
+                'icon-icoMoon518', 'icon-icoMoon519', 'icon-icoMoon520', 'icon-icoMoon521', 'icon-icoMoon522',
+                'icon-icoMoon523', 'icon-icoMoon524', 'icon-icoMoon525', 'icon-icoMoon526', 'icon-icoMoon527',
+                'icon-icoMoon528', 'icon-icoMoon529', 'icon-icoMoon530', 'icon-icoMoon531', 'icon-icoMoon532',
+                'icon-icoMoon533', 'icon-icoMoon534', 'icon-icoMoon535', 'icon-icoMoon536', 'icon-icoMoon537',
+                'icon-icoMoon538', 'icon-icoMoon539', 'icon-icoMoon540', 'icon-icoMoon541', 'icon-icoMoon542',
+                'icon-icoMoon543', 'icon-icoMoon544', 'icon-icoMoon545', 'icon-icoMoon546', 'icon-icoMoon547',
+                'icon-icoMoon548', 'icon-icoMoon549', 'icon-icoMoon550', 'icon-icoMoon551', 'icon-icoMoon552',
+                'icon-icoMoon553', 'icon-icoMoon554', 'icon-icoMoon555', 'icon-icoMoon556', 'icon-icoMoon557',
+                'icon-icoMoon558', 'icon-icoMoon559', 'icon-icoMoon560', 'icon-icoMoon561', 'icon-icoMoon562',
+                'icon-icoMoon563', 'icon-icoMoon564', 'icon-icoMoon565', 'icon-icoMoon566', 'icon-icoMoon567',
+                'icon-icoMoon568', 'icon-icoMoon569', 'icon-icoMoon570', 'icon-icoMoon571', 'icon-icoMoon572',
+                'icon-icoMoon573', 'icon-icoMoon574', 'icon-icoMoon575', 'icon-icoMoon576', 'icon-icoMoon577',
+                'icon-icoMoon578', 'icon-icoMoon579', 'icon-icoMoon580', 'icon-icoMoon581', 'icon-icoMoon582',
+                'icon-icoMoon583', 'icon-icoMoon584', 'icon-icoMoon585', 'icon-icoMoon586', 'icon-icoMoon587',
+                'icon-icoMoon588', 'icon-icoMoon589', 'icon-icoMoon590', 'icon-icoMoon591', 'icon-icoMoon592',
+                'icon-icoMoon593', 'icon-icoMoon594', 'icon-icoMoon595', 'icon-icoMoon596', 'icon-icoMoon597',
+                'icon-icoMoon598', 'icon-icoMoon599', 'icon-icoMoon600', 'icon-icoMoon601', 'icon-icoMoon602',
+                'icon-icoMoon603', 'icon-icoMoon604', 'icon-icoMoon605', 'icon-icoMoon606', 'icon-icoMoon607',
+                'icon-icoMoon608', 'icon-icoMoon609', 'icon-icoMoon610', 'icon-icoMoon611', 'icon-icoMoon612',
+                'icon-icoMoon613', 'icon-icoMoon614', 'icon-icoMoon615', 'icon-icoMoon616', 'icon-icoMoon617',
+                'icon-icoMoon618', 'icon-icoMoon619', 'icon-icoMoon620', 'icon-icoMoon621', 'icon-icoMoon622',
+                'icon-icoMoon623', 'icon-icoMoon624', 'icon-icoMoon625', 'icon-icoMoon626', 'icon-icoMoon627',
+                'icon-icoMoon628', 'icon-icoMoon629', 'icon-icoMoon630', 'icon-icoMoon631', 'icon-icoMoon632',
+                'icon-icoMoon633', 'icon-icoMoon634', 'icon-icoMoon635', 'icon-icoMoon636', 'icon-icoMoon637',
+                'icon-icoMoon638', 'icon-icoMoon639', 'icon-icoMoon640', 'icon-icoMoon641', 'icon-icoMoon642',
+                'icon-icoMoon643', 'icon-icoMoon644', 'icon-icoMoon645', 'icon-icoMoon646', 'icon-icoMoon647',
+                'icon-icoMoon648', 'icon-icoMoon649', 'icon-icoMoon650', 'icon-icoMoon651', 'icon-icoMoon652',
+                'icon-icoMoon653', 'icon-icoMoon654', 'icon-icoMoon655', 'icon-icoMoon656', 'icon-icoMoon657',
+                'icon-icoMoon658', 'icon-icoMoon659', 'icon-icoMoon660', 'icon-icoMoon661', 'icon-icoMoon662',
+                'icon-icoMoon663', 'icon-icoMoon664', 'icon-icoMoon665', 'icon-icoMoon666', 'icon-icoMoon667',
+                'icon-icoMoon668', 'icon-icoMoon669', 'icon-icoMoon670', 'icon-icoMoon671', 'icon-icoMoon672',
+                'icon-icoMoon673', 'icon-icoMoon674', 'icon-icoMoon675', 'icon-icoMoon676', 'icon-icoMoon677',
+                'icon-icoMoon678', 'icon-icoMoon679', 'icon-icoMoon680', 'icon-icoMoon681', 'icon-icoMoon682',
+                'icon-icoMoon683', 'icon-icoMoon684', 'icon-icoMoon685', 'icon-icoMoon686', 'icon-icoMoon687',
+                'icon-icoMoon688', 'icon-icoMoon689', 'icon-icoMoon690', 'icon-icoMoon691', 'icon-icoMoon692',
+                'icon-icoMoon693', 'icon-icoMoon694', 'icon-icoMoon695', 'icon-icoMoon696', 'icon-icoMoon697',
+                'icon-icoMoon698', 'icon-icoMoon699', 'icon-icoMoon700', 'icon-icoMoon701', 'icon-icoMoon702',
+                'icon-icoMoon703', 'icon-icoMoon704', 'icon-icoMoon705', 'icon-icoMoon706', 'icon-icoMoon707',
+                'icon-icoMoon708', 'icon-icoMoon709', 'icon-icoMoon710', 'icon-icoMoon711', 'icon-icoMoon712',
+                'icon-icoMoon713', 'icon-icoMoon714', 'icon-icoMoon715', 'icon-icoMoon716', 'icon-icoMoon717',
+                'icon-icoMoon718', 'icon-icoMoon719', 'icon-icoMoon720', 'icon-icoMoon721', 'icon-icoMoon722',
+                'icon-icoMoon723', 'icon-icoMoon724', 'icon-icoMoon725', 'icon-icoMoon726', 'icon-icoMoon727',
+                'icon-icoMoon728', 'icon-icoMoon729', 'icon-icoMoon730', 'icon-icoMoon731', 'icon-icoMoon732',
+                'icon-icoMoon733', 'icon-icoMoon734', 'icon-icoMoon735', 'icon-icoMoon736', 'icon-icoMoon737',
+                'icon-icoMoon738', 'icon-icoMoon739', 'icon-icoMoon740', 'icon-icoMoon741', 'icon-icoMoon742',
+                'icon-icoMoon743', 'icon-icoMoon744', 'icon-icoMoon745', 'icon-icoMoon746', 'icon-icoMoon747',
+                'icon-icoMoon748', 'icon-icoMoon749', 'icon-icoMoon750', 'icon-icoMoon751', 'icon-icoMoon752',
+                'icon-icoMoon753', 'icon-icoMoon754', 'icon-icoMoon755', 'icon-icoMoon756', 'icon-icoMoon757',
+                'icon-icoMoon758', 'icon-icoMoon759', 'icon-icoMoon760', 'icon-icoMoon761', 'icon-icoMoon762',
+                'icon-icoMoon763', 'icon-icoMoon764', 'icon-icoMoon765', 'icon-icoMoon766', 'icon-icoMoon767',
+                'icon-icoMoon768', 'icon-icoMoon769', 'icon-icoMoon770', 'icon-icoMoon771', 'icon-icoMoon772',
+                'icon-icoMoon773', 'icon-icoMoon774', 'icon-icoMoon775', 'icon-icoMoon776', 'icon-icoMoon777',
+                'icon-icoMoon778', 'icon-icoMoon779', 'icon-icoMoon780', 'icon-icoMoon781', 'icon-icoMoon782',
+                'icon-icoMoon783', 'icon-icoMoon784', 'icon-icoMoon785', 'icon-icoMoon786', 'icon-icoMoon787',
+                'icon-icoMoon788', 'icon-icoMoon789', 'icon-icoMoon790', 'icon-icoMoon791', 'icon-icoMoon792',
+                'icon-icoMoon793', 'icon-icoMoon794', 'icon-icoMoon795', 'icon-icoMoon796', 'icon-icoMoon797',
+                'icon-icoMoon798', 'icon-icoMoon799', 'icon-icoMoon800', 'icon-icoMoon801', 'icon-icoMoon802',
+                'icon-icoMoon803', 'icon-icoMoon804', 'icon-icoMoon805', 'icon-icoMoon806', 'icon-icoMoon807',
+                'icon-icoMoon808', 'icon-icoMoon809', 'icon-icoMoon810', 'icon-icoMoon811', 'icon-icoMoon812',
+                'icon-icoMoon813', 'icon-icoMoon814', 'icon-icoMoon815', 'icon-icoMoon816', 'icon-icoMoon817',
+                'icon-icoMoon818', 'icon-icoMoon819', 'icon-icoMoon820', 'icon-icoMoon821', 'icon-icoMoon822',
+                'icon-icoMoon823', 'icon-icoMoon824', 'icon-icoMoon825', 'icon-icoMoon826', 'icon-icoMoon827',
+                'icon-icoMoon828', 'icon-icoMoon829', 'icon-icoMoon830', 'icon-icoMoon831', 'icon-icoMoon832',
+                'icon-icoMoon833', 'icon-icoMoon834', 'icon-icoMoon835', 'icon-icoMoon836', 'icon-icoMoon837',
+                'icon-icoMoon838', 'icon-icoMoon839', 'icon-icoMoon840', 'icon-icoMoon841', 'icon-icoMoon842',
+                'icon-icoMoon843', 'icon-icoMoon844', 'icon-icoMoon845', 'icon-icoMoon846', 'icon-icoMoon847',
+                'icon-icoMoon848', 'icon-icoMoon849', 'icon-icoMoon850', 'icon-icoMoon851', 'icon-icoMoon852',
+                'icon-icoMoon853', 'icon-icoMoon854', 'icon-icoMoon855', 'icon-icoMoon856', 'icon-icoMoon857',
+                'icon-icoMoon858', 'icon-icoMoon859', 'icon-icoMoon860', 'icon-icoMoon861', 'icon-icoMoon862',
+                'icon-icoMoon863', 'icon-icoMoon864', 'icon-icoMoon865', 'icon-icoMoon866', 'icon-icoMoon867',
+                'icon-icoMoon868', 'icon-icoMoon869', 'icon-icoMoon870', 'icon-icoMoon871', 'icon-icoMoon872',
+                'icon-icoMoon873', 'icon-icoMoon874', 'icon-icoMoon875', 'icon-icoMoon876', 'icon-icoMoon877',
+                'icon-icoMoon878', 'icon-icoMoon879', 'icon-icoMoon880', 'icon-icoMoon881', 'icon-icoMoon882',
+                'icon-icoMoon883', 'icon-icoMoon884', 'icon-icoMoon885', 'icon-icoMoon886', 'icon-icoMoon887',
+                'icon-icoMoon888', 'icon-icoMoon889', 'icon-icoMoon890', 'icon-icoMoon891', 'icon-icoMoon892',
+                'icon-icoMoon893', 'icon-icoMoon894', 'icon-icoMoon895', 'icon-icoMoon896', 'icon-icoMoon897',
+                'icon-icoMoon898', 'icon-icoMoon899', 'icon-icoMoon900', 'icon-icoMoon901', 'icon-icoMoon902',
+                'icon-icoMoon903', 'icon-icoMoon904', 'icon-icoMoon905', 'icon-icoMoon906', 'icon-icoMoon907',
+                'icon-icoMoon908', 'icon-icoMoon909', 'icon-icoMoon910', 'icon-icoMoon911', 'icon-icoMoon912',
+                'icon-icoMoon913', 'icon-icoMoon914', 'icon-icoMoon915', 'icon-icoMoon916', 'icon-icoMoon917',
+                'icon-icoMoon918', 'icon-icoMoon919', 'icon-icoMoon920', 'icon-icoMoon921', 'icon-icoMoon922',
+                'icon-icoMoon923', 'icon-icoMoon924', 'icon-icoMoon925', 'icon-icoMoon926', 'icon-icoMoon927',
+                'icon-icoMoon928', 'icon-icoMoon929', 'icon-icoMoon930', 'icon-icoMoon931', 'icon-icoMoon932',
+                'icon-icoMoon933', 'icon-icoMoon934', 'icon-icoMoon935', 'icon-icoMoon936', 'icon-icoMoon937',
+                'icon-icoMoon938', 'icon-icoMoon939', 'icon-icoMoon940', 'icon-icoMoon941', 'icon-icoMoon942',
+                'icon-icoMoon943', 'icon-icoMoon944', 'icon-icoMoon945', 'icon-icoMoon946', 'icon-icoMoon947',
+                'icon-icoMoon948', 'icon-icoMoon949', 'icon-icoMoon950', 'icon-icoMoon951', 'icon-icoMoon952',
+                'icon-icoMoon953', 'icon-icoMoon954', 'icon-icoMoon955', 'icon-icoMoon956', 'icon-icoMoon957',
+                'icon-icoMoon958', 'icon-icoMoon959', 'icon-icoMoon960', 'icon-icoMoon961', 'icon-icoMoon962',
+                'icon-icoMoon963', 'icon-icoMoon964', 'icon-icoMoon965', 'icon-icoMoon966', 'icon-icoMoon967',
+                'icon-icoMoon968', 'icon-icoMoon969', 'icon-icoMoon970', 'icon-icoMoon971', 'icon-icoMoon972',
+                'icon-icoMoon973', 'icon-icoMoon974', 'icon-icoMoon975', 'icon-icoMoon976', 'icon-icoMoon977',
+                'icon-icoMoon978', 'icon-icoMoon979', 'icon-icoMoon980', 'icon-icoMoon981', 'icon-icoMoon982',
+                'icon-icoMoon983', 'icon-icoMoon984', 'icon-icoMoon985', 'icon-icoMoon986', 'icon-icoMoon987',
+                'icon-icoMoon988', 'icon-icoMoon989', 'icon-icoMoon990', 'icon-icoMoon991', 'icon-icoMoon992',
+                'icon-icoMoon993', 'icon-icoMoon994', 'icon-icoMoon995', 'icon-icoMoon996', 'icon-icoMoon997',
+                'icon-icoMoon998', 'icon-icoMoon999', 'icon-icoMoon1000'
+            ];
+            return icomoonIcons;
+        }
+
+        // Función para llenar iconos de Font Awesome
+        function fillFontAwesomeIcons() {
+            const iconGrid = document.getElementById('font-awesome-icons');
+            const icons = getFontAwesomeIconNames();
+            icons.forEach(iconName => {
+                const iconItem = document.createElement('div');
+                iconItem.className = 'icon-item';
+                iconItem.innerHTML = `
+                    <i class="${iconName} fa-icon"></i>
+                    <span class="icon-name">${iconName}</span>
+                `;
+                iconGrid.appendChild(iconItem);
+            });
+        }
+
+        // Función para llenar iconos de Ionicons
+        function fillIonicons() {
+            const iconGrid = document.getElementById('ionicons');
+            const icons = getIoniconNames();
+            icons.forEach(iconName => {
+                const iconItem = document.createElement('div');
+                iconItem.className = 'icon-item';
+                iconItem.innerHTML = `
+                    <i class="${iconName} ion-icon"></i>
+                    <span class="icon-name">${iconName}</span>
+                `;
+                iconGrid.appendChild(iconItem);
+            });
+        }
+
+        // Función para llenar iconos de Glyphicons
+        function fillGlyphicons() {
+            const iconGrid = document.getElementById('glyphicons');
+            const icons = getGlyphiconsNames();
+            icons.forEach(iconName => {
+                const iconItem = document.createElement('div');
+                iconItem.className = 'icon-item';
+                iconItem.innerHTML = `
+                    <span class="${iconName} glyphicon"></span>
+                    <span class="icon-name">${iconName}</span>
+                `;
+                iconGrid.appendChild(iconItem);
+            });
+        }
+
+        // Función para llenar iconos de Icomoon
+        function fillIcomoon() {
+            const iconGrid = document.getElementById('icomoon');
+            const icons = getIcomoonNames();
+            icons.forEach(iconName => {
+                const iconItem = document.createElement('div');
+                iconItem.className = 'icon-item';
+                iconItem.innerHTML = `
+                    <span class="${iconName} icomoon-icon"></span>
+                    <span class="icon-name">${iconName}</span>
+                `;
+                iconGrid.appendChild(iconItem);
+            });
+        }
+
+        // Llenar todos los iconos cuando se cargue la página
+        document.addEventListener('DOMContentLoaded', function() {
+            fillFontAwesomeIcons();
+            fillIonicons();
+            fillGlyphicons();
+            fillIcomoon();
+        });
+    </script>
+</body>
+</html>

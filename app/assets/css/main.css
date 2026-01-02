@@ -1,0 +1,137 @@
+:root {
+    --primary-gradient: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    --card-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Login page */
+.login-page {
+    background: var(--primary-gradient);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 420px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.login-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+}
+
+.login-card-header {
+    background: var(--primary-gradient);
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 0;
+}
+
+.login-card-body {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.login-logo {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.login-logo i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.form-control {
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d3e2;
+    transition: all 0.2s;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.input-group-text {
+    background-color: #fff;
+    border-radius: 6px 0 0 6px;
+}
+
+.password-toggle {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #6c757d;
+    transition: color 0.2s;
+}
+
+.password-toggle:hover {
+    color: #0d6efd;
+}
+
+.btn-login {
+    background: var(--primary-gradient);
+    border: none;
+    padding: 0.75rem;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.login-footer a {
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.login-footer a:hover {
+    color: #0a58ca;
+    text-decoration: underline;
+}
+
+.spinner {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s linear infinite;
+    margin-right: 0.5rem;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}

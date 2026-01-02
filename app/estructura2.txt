@@ -1,0 +1,11 @@
+/
+├── index.php
+├── includes/
+│   ├── auth.php
+│   └── conexion.php
+├── assets/
+│   ├── css/
+│   │   └── main.css
+│   └── js/
+│       └── login.js
+└── acoradoor.sql

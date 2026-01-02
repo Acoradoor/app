@@ -1,0 +1,209 @@
+<?php
+
+// Configurar cabeceras seguras para sesiones
+ini_set('session.cookie_httponly', 1);
+ini_set('session.cookie_secure', 1);
+ini_set('session.use_strict_mode', 1);
+session_start();
+
+require 'conexion.php';
+
+// Función para registrar usuarios (solo admin)
+function registrarUsuario($usuario, $password_plana, $rol) {
+    global $conn;
+    
+    // Validar entrada
+    $usuario = trim(htmlspecialchars($usuario, ENT_QUOTES, 'UTF-8'));
+    $rol = trim(htmlspecialchars($rol, ENT_QUOTES, 'UTF-8'));
+    
+    if (strlen($usuario) < 3 || strlen($usuario) > 50) {
+        return false;
+    }
+    
+    if (strlen($password_plana) < 8) {
+        return false;
+    }
+    
+    if (!in_array($rol, ['admin', 'user'])) {
+        return false;
+    }
+    
+    try {
+        $hash = password_hash($password_plana, PASSWORD_BCRYPT, ['cost' => 12]);
+        $stmt = $conn->prepare("INSERT INTO usuarios (usuario, password_hash, rol, creado_en) VALUES (?, ?, ?, NOW())");
+        return $stmt->execute([$usuario, $hash, $rol]);
+    } catch (PDOException $e) {
+        error_log("Error al registrar usuario: " . $e->getMessage());
+        return false;
+    }
+}
+
+// Función de login mejorada
+function login($usuario, $password_plana) {
+    global $conn;
+    
+    // Validar entrada
+    $usuario = trim(htmlspecialchars($usuario, ENT_QUOTES, 'UTF-8'));
+    $password_plana = trim($password_plana);
+    
+    if (empty($usuario) || empty($password_plana)) {
+        return false;
+    }
+    
+    try {
+        $stmt = $conn->prepare("SELECT id, usuario, password_hash, rol, activo FROM usuarios WHERE usuario = ? AND activo = 1");
+        $stmt->execute([$usuario]);
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+        
+        if ($user && password_verify($password_plana, $user['password_hash'])) {
+            $_SESSION['user_id'] = $user['id'];
+            $_SESSION['user_rol'] = $user['rol'];
+            $_SESSION['user_name'] = $user['usuario'];
+            
+            // Registrar el inicio de sesión exitoso
+            $stmt = $conn->prepare("UPDATE usuarios SET ultimo_login = NOW(), intentos_fallidos = 0 WHERE id = ?");
+            $stmt->execute([$user['id']]);
+            
+            // Regenerar ID de sesión para prevenir fijación
+            session_regenerate_id(true);
+            
+            return true;
+        }
+    } catch (PDOException $e) {
+        error_log("Error de login: " . $e->getMessage());
+        return false;
+    }
+    
+    return false;
+}
+
+function isLoggedIn() {
+    return isset($_SESSION['user_id']) && !empty($_SESSION['user_id']);
+}
+
+// Función para verificar si el usuario tiene permisos
+function hasPermission($required_role) {
+    if (!isLoggedIn()) {
+        return false;
+    }
+    
+    $allowed_roles = [
+        'admin' => ['admin'],
+        'user' => ['admin', 'user']
+    ];
+    
+    $user_role = $_SESSION['user_rol'] ?? '';
+    return in_array($user_role, $allowed_roles[$required_role] ?? []);
+}
+
+if (isset($_GET['action']) && $_GET['action'] === 'logout') {
+    logout();
+    header("Location: ../index.php");
+    exit;
+}
+
+function logout() {
+    // Limpiar todas las variables de sesión
+    $_SESSION = array();
+    
+    // Si se utiliza cookie de sesión
+    if (ini_get("session.use_cookies")) {
+        $params = session_get_cookie_params();
+        setcookie(session_name(), '', time() - 42000,
+            $params["path"], $params["domain"],
+            $params["secure"], $params["httponly"]
+        );
+    }
+    
+    // Destruir la sesión
+    session_destroy();
+}
+
+// Verificar token CSRF
+function verifyCsrfToken($token) {
+    return isset($_SESSION['csrf_token']) && hash_equals($_SESSION['csrf_token'], $token);
+}
+
+// Función para generar un nuevo token CSRF
+function generateCsrfToken() {
+    if (empty($_SESSION['csrf_token'])) {
+        $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+    }
+    return $_SESSION['csrf_token'];
+}
+
+// Manejo de login via AJAX
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
+    $response = ['success' => false, 'error' => ''];
+    
+    // Verificar token CSRF
+    if (!isset($_POST['csrf_token']) || !verifyCsrfToken($_POST['csrf_token'])) {
+        $response['error'] = 'Token de seguridad inválido';
+        header('Content-Type: application/json');
+        echo json_encode($response);
+        exit;
+    }
+    
+    if ($_POST['action'] === 'login') {
+        // Validar rate limiting
+        if (!isset($_SESSION['login_attempts'])) {
+            $_SESSION['login_attempts'] = 0;
+            $_SESSION['last_login_attempt'] = 0;
+        }
+        
+        $current_time = time();
+        $time_since_last_attempt = $current_time - $_SESSION['last_login_attempt'];
+        
+        // Si han pasado más de 15 minutos, reiniciar el contador
+        if ($time_since_last_attempt > 900) {
+            $_SESSION['login_attempts'] = 0;
+        }
+        
+        // Si hay más de 5 intentos en 15 minutos, bloquear
+        if ($_SESSION['login_attempts'] >= 5) {
+            $response['error'] = 'Demasiados intentos fallidos. Por favor, espere 15 minutos.';
+        } else {
+            if (login($_POST['usuario'], $_POST['password'])) {
+                $response['success'] = true;
+                $_SESSION['login_attempts'] = 0; // Reiniciar contador en éxito
+                
+                // Redirigir según rol
+                if ($_SESSION['user_rol'] === 'admin') {
+                    $response['redirect'] = 'admin/';
+                } else {
+                    $response['redirect'] = 'admin/';
+                }
+            } else {
+                $response['error'] = 'Usuario o contraseña incorrectos';
+                $_SESSION['login_attempts']++;
+                $_SESSION['last_login_attempt'] = $current_time;
+                
+                // Actualizar intentos fallidos en base de datos
+                try {
+                    global $conn;
+                    $stmt = $conn->prepare("UPDATE usuarios SET intentos_fallidos = intentos_fallidos + 1 WHERE usuario = ?");
+                    $stmt->execute([$_POST['usuario']]);
+                } catch (PDOException $e) {
+                    error_log("Error actualizando intentos fallidos: " . $e->getMessage());
+                }
+            }
+        }
+    }
+    
+    header('Content-Type: application/json');
+    echo json_encode($response);
+    exit;
+}
+
+// Función para obtener proveedores
+function obtenerProveedores() {
+    global $conn;
+    try {
+        $stmt = $conn->prepare("SELECT id_proveedor, nombre_proveedor FROM proveedores WHERE status_proveedor = 1 ORDER BY nombre_proveedor");
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+        return [];
+    }
+}
+?>
